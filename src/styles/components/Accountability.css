@@ -1,0 +1,288 @@
+.accountability-section {
+  padding: 8rem 0;
+  background-color: #154c35;
+  font-family: "Google Sans", "Roboto", "DM Sans", sans-serif;
+  color: white;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .accountability-section {
+    padding: 6rem 0;
+  }
+}
+.accountability-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient(to right, #e7e5e4 1px, transparent 1px), linear-gradient(to bottom, #e7e5e4 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 0;
+  opacity: 0.2;
+  mask-image: repeating-linear-gradient(to right, black 0px, black 3px, transparent 3px, transparent 8px), repeating-linear-gradient(to bottom, black 0px, black 3px, transparent 3px, transparent 8px), radial-gradient(ellipse 60% 60% at 50% 50%, #000 30%, transparent 70%);
+  -webkit-mask-image: repeating-linear-gradient(to right, black 0px, black 3px, transparent 3px, transparent 8px), repeating-linear-gradient(to bottom, black 0px, black 3px, transparent 3px, transparent 8px), radial-gradient(ellipse 60% 60% at 50% 50%, #000 30%, transparent 70%);
+  mask-composite: intersect;
+  -webkit-mask-composite: source-in;
+}
+.accountability-section .section-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .accountability-section .section-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+.accountability-section .left-content {
+  flex: 1;
+  max-width: 600px;
+}
+@media (max-width: 1024px) {
+  .accountability-section .left-content {
+    max-width: 100%;
+  }
+}
+.accountability-section .left-content .section-header {
+  margin-bottom: 3rem;
+}
+.accountability-section .left-content .section-header .section-label {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 20px 5px 5px;
+  border-radius: 50px;
+  border: 1px solid #eee;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+}
+.accountability-section .left-content .section-header .section-label .label-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #154c35;
+  color: white;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  font-size: 0.9rem;
+}
+.accountability-section .left-content .section-header h2 {
+  font-family: "Google Sans", "Roboto", "DM Sans", sans-serif;
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 768px) {
+  .accountability-section .left-content .section-header h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .accountability-section .left-content .section-header h2 {
+    font-size: 1.8rem;
+  }
+}
+.accountability-section .left-content .section-header .description {
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 1.6;
+}
+.accountability-section .left-content .features-list {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.accountability-section .left-content .features-list .feature-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 14px;
+}
+.accountability-section .left-content .features-list .feature-item .icon-circle {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(21, 76, 53, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+.accountability-section .left-content .features-list .feature-item .text-content h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0.15rem;
+}
+.accountability-section .left-content .features-list .feature-item .text-content p {
+  font-size: 0.95rem;
+  color: #a0aec0;
+  margin: 0;
+  line-height: 1.4;
+}
+.accountability-section .left-content .btn-trust {
+  background-color: #154c35;
+  color: white;
+  padding: 1.25rem 2rem;
+  border-radius: 50px;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.2s ease;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.accountability-section .left-content .btn-trust:hover {
+  background-color: rgb(26.5206185567, 95.9793814433, 66.9329896907);
+  transform: translateX(5px);
+}
+.accountability-section .right-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.accountability-section .right-content .verified-card {
+  border-radius: 24px;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 0;
+  gap: 10px;
+}
+.accountability-section .right-content .verified-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.853));
+  z-index: -1;
+}
+.accountability-section .right-content .verified-card .card-top {
+  background: white;
+  padding: 14px 20px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.accountability-section .right-content .verified-card .card-top .main-check-icon {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(255, 191, 0);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.7rem;
+}
+.accountability-section .right-content .verified-card .card-top .content {
+  width: calc(100% - 80px - 20px);
+  display: flex;
+  flex-direction: column;
+}
+.accountability-section .right-content .verified-card .card-top .content h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  margin: 0;
+}
+@media (max-width: 576px) {
+  .accountability-section .right-content .verified-card .card-top .content h3 {
+    font-size: 1rem;
+  }
+}
+.accountability-section .right-content .verified-card .card-top .content .trust-score {
+  font-size: 0.9rem;
+  color: #696969;
+  display: block;
+  text-align: left;
+  margin: 0;
+}
+.accountability-section .right-content .verified-card .verification-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  background-color: rgba(255, 255, 255, 0.368627451);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 24px;
+  margin-top: 10px;
+}
+.accountability-section .right-content .verified-card .verification-steps .step-item {
+  width: calc(50% - 15px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.8862745098);
+  padding-top: 20px;
+}
+@media (max-width: 576px) {
+  .accountability-section .right-content .verified-card .verification-steps .step-item {
+    width: 100%;
+  }
+}
+.accountability-section .right-content .verified-card .verification-steps .step-item:nth-of-type(1), .accountability-section .right-content .verified-card .verification-steps .step-item:nth-of-type(2) {
+  border-top: none;
+  padding-top: 0;
+}
+@media (max-width: 576px) {
+  .accountability-section .right-content .verified-card .verification-steps .step-item:nth-of-type(2) {
+    border-top: 1px dashed rgba(255, 255, 255, 0.8862745098);
+    padding-top: 20px;
+  }
+}
+.accountability-section .right-content .verified-card .verification-steps .step-item .step-check {
+  color: white;
+  background-color: transparent;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: flex;
+}
+.accountability-section .right-content .verified-card .verification-steps .step-item span {
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-align: left;
+}
+.accountability-section .right-content .verified-card .card-footer {
+  font-size: 0.8rem;
+  color: #e7edf5;
+  margin-top: 20px;
+}/*# sourceMappingURL=Accountability.css.map */

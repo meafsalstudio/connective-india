@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Force trailing slash for directories (good for SEO and structure)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteRule ^(.*)$ /$1/ [L,R=301]
+
+  # Custom 404 Page (Next.js generates 404/index.html with trailingSlash: true)
+  ErrorDocument 404 /404.html
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Cache control for static assets
+  <FilesMatch "\.(js|css|png|jpg|jpeg|gif|ico|svg|webp)$">
+    Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
+  
+  # Security Headers
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+</IfModule>

@@ -1,0 +1,211 @@
+.solution-pillars-section {
+  padding: 8rem 0;
+  background-color: #f9fafb;
+  font-family: "Google Sans", "Roboto", "DM Sans", sans-serif;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .solution-pillars-section {
+    padding: 3rem 0;
+  }
+}
+.solution-pillars-section .container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.solution-pillars-section .header-content {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.solution-pillars-section .header-content .section-label {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 20px 5px 5px;
+  border-radius: 50px;
+  border: 1px solid #eee;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 1.5rem;
+}
+.solution-pillars-section .header-content .section-label .label-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #154c35;
+  color: white;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  font-size: 0.9rem;
+}
+.solution-pillars-section .header-content h2 {
+  font-family: "Google Sans", "Roboto", "DM Sans", sans-serif;
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #0d1e29;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 768px) {
+  .solution-pillars-section .header-content h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .solution-pillars-section .header-content h2 {
+    font-size: 1.8rem;
+  }
+}
+.solution-pillars-section .header-content .subtitle {
+  font-size: 1.125rem;
+  color: #5f6c7b;
+  margin-bottom: 0;
+}
+.solution-pillars-section .pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .solution-pillars-section .pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .solution-pillars-section .pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
+.solution-pillars-section .pillar-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media (max-width: 576px) {
+  .solution-pillars-section .pillar-column {
+    gap: 10px;
+  }
+}
+.solution-pillars-section .pillar-card {
+  width: 100%;
+  aspect-ratio: 3/5;
+  border-radius: 32px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@media (max-width: 1024px) {
+  .solution-pillars-section .pillar-card {
+    aspect-ratio: 3/4;
+  }
+}
+@media (max-width: 576px) {
+  .solution-pillars-section .pillar-card {
+    aspect-ratio: 3/3.3;
+  }
+}
+.solution-pillars-section .pillar-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+.solution-pillars-section .pillar-card .card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+  color: white;
+  z-index: 0;
+}
+.solution-pillars-section .pillar-card .card-content::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.662));
+  content: "";
+  z-index: -1;
+}
+.solution-pillars-section .pillar-card .card-content .big-value {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.solution-pillars-section .pillar-card .card-content .floating-pill {
+  background-color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.solution-pillars-section .pillar-card .card-content .floating-pill .pill-icon {
+  color: #154c35;
+  display: flex;
+}
+.solution-pillars-section .pillar-card .card-content .floating-pill .pill-text {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.solution-pillars-section .pillar-card .card-content .action-buttons {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  display: flex;
+  gap: 12px;
+}
+.solution-pillars-section .pillar-card .card-content .action-buttons .btn-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.solution-pillars-section .pillar-card .card-content .action-buttons .btn-circle:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.solution-pillars-section .pillar-info {
+  padding: 0 0.5rem;
+}
+.solution-pillars-section .pillar-info h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0d1e29;
+  margin-bottom: 0.5rem;
+}
+.solution-pillars-section .pillar-info p {
+  font-size: 0.95rem;
+  color: #5f6c7b;
+  line-height: 1.5;
+  margin: 0;
+  width: 95%;
+}/*# sourceMappingURL=SolutionPillars.css.map */

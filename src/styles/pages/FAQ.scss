@@ -1,0 +1,41 @@
+@import '../variables';
+@import '../mixins';
+
+.faq-page {
+  .faq-content {
+    padding: 6rem 0;
+
+    @include mobile {
+      padding: 3rem 0;
+    }
+
+    .container {
+      max-width: 900px;
+    }
+
+    .faq-grid {
+      display: grid;
+      gap: 2rem;
+
+      .faq-item {
+        background: $color-white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+        h3 {
+          font-size: 1.35rem;
+          color: $color-text-main;
+          margin-bottom: 0.75rem;
+          font-weight: 600;
+        }
+
+        p {
+            color: $color-text-light;
+            line-height: 1.6;
+            margin: 0;
+        }
+      }
+    }
+  }
+}

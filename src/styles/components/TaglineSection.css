@@ -1,0 +1,112 @@
+.tagline-section {
+  min-height: 100vh;
+  min-height: 100dvh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+.tagline-section .bubbles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+.tagline-section .section-container {
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.tagline-section h2 {
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: #0d1e29;
+  line-height: 1.2;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  letter-spacing: -0.03em;
+}
+@media (max-width: 768px) {
+  .tagline-section h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .tagline-section h2 {
+    font-size: 2.75rem;
+    letter-spacing: -0.01em;
+  }
+}
+.tagline-section h2 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  white-space: nowrap;
+}
+.tagline-section h2 .text-line {
+  will-change: transform, opacity;
+}
+.tagline-section h2 .text-line::-moz-selection {
+  background: #154c35;
+  color: white;
+}
+.tagline-section h2 .text-line::selection {
+  background: #154c35;
+  color: white;
+}
+.tagline-section .chat-bubble {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  will-change: transform, top, left, opacity;
+}
+.tagline-section .chat-bubble .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  flex-shrink: 0;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border: 3px solid white;
+  transition: transform 0.3s ease;
+}
+@media (max-width: 768px) {
+  .tagline-section .chat-bubble .avatar {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .tagline-section .chat-bubble .avatar {
+    width: 42px;
+    height: 42px;
+    border-width: 2px;
+  }
+}
+.tagline-section .chat-bubble .avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tagline-section .chat-bubble:hover .avatar {
+  transform: scale(1.1);
+}/*# sourceMappingURL=TaglineSection.css.map */

@@ -1,0 +1,109 @@
+@import "./variables";
+@import "./mixins";
+
+// Global styles
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-primary;
+  background-color: $color-background;
+  color: $color-text-main;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+  margin-bottom: $spacing-md;
+  font-weight: 700;
+  color: $color-primary;
+  text-transform: uppercase;
+}
+
+.section-label {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-secondary;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: $font-primary;
+}
+
+.container {
+  @include container;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+
+  &-primary {
+    background-color: $color-primary;
+    color: $color-white;
+    &:hover {
+      background-color: lighten($color-primary, 10%);
+      transform: translateY(-2px);
+    }
+  }
+
+  &-secondary {
+    background-color: $color-secondary;
+    color: $color-white;
+    &:hover {
+      background-color: lighten($color-secondary, 10%);
+      transform: translateY(-2px);
+    }
+  }
+
+  &-outline {
+    background-color: transparent;
+    border: 2px solid $color-primary;
+    color: $color-primary;
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+}

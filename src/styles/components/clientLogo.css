@@ -1,0 +1,104 @@
+.clientLogo {
+  padding: 3rem 0;
+  background: #f7f7f7;
+  overflow: hidden;
+  position: relative;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.clientLogo .marqueeContainer {
+  display: flex;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  gap: 2rem;
+  position: relative;
+  padding: 1rem 0;
+}
+@media (max-width: 768px) {
+  .clientLogo .marqueeContainer {
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .clientLogo .marqueeContainer {
+    gap: 1rem;
+  }
+}
+.clientLogo .marqueeContainer::before, .clientLogo .marqueeContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  z-index: 2;
+}
+.clientLogo .marqueeContainer::before {
+  left: 0;
+  background: linear-gradient(to right, #f7f7f7 0%, transparent 100%);
+}
+.clientLogo .marqueeContainer::after {
+  right: 0;
+  background: linear-gradient(to left, #f7f7f7 0%, transparent 100%);
+}
+.clientLogo .marqueeContent {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 100%;
+  gap: 2rem;
+  animation: scroll 40s linear infinite;
+}
+@media (max-width: 768px) {
+  .clientLogo .marqueeContent {
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .clientLogo .marqueeContent {
+    gap: 1rem;
+  }
+}
+.clientLogo .marqueeContent .logoItem {
+  flex: 0 0 auto;
+  width: 150px;
+  aspect-ratio: 3/1.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .clientLogo .marqueeContent .logoItem {
+    width: 130px;
+  }
+}
+@media (max-width: 576px) {
+  .clientLogo .marqueeContent .logoItem {
+    width: 110px;
+  }
+}
+.clientLogo .marqueeContent .logoItem:hover {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.1);
+}
+.clientLogo .marqueeContent .logoItem img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 4rem));
+  }
+}/*# sourceMappingURL=clientLogo.css.map */

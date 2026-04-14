@@ -1,0 +1,38 @@
+// Colors
+$color-primary: #0a2342; // Deep Blue - National Authority
+$color-secondary: #ff9933; // Saffron - Energy/Growth
+$color-accent: #138808; // Green - Prosperity/Trust
+$color-text-main: #333333;
+$color-text-light: #666666;
+$color-background: #ffffff;
+$color-background-light: #f8f9fa;
+$color-border: #e0e0e0;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-brand-green: #154c35; // Dark green from image
+$color-brand-green-light: #f6fbf7; // Light green background
+$color-text-green: #154c35;
+
+
+// Fonts
+$font-primary: 'Google Sans', 'Roboto', 'DM Sans', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+
+// Breakpoints
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-large: 1200px;
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 48px;
+
+// Shadows
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);

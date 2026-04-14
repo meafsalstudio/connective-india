@@ -1,0 +1,1015 @@
+@import '../variables.scss';
+@import '../components/AboutCarousel.scss';
+
+.about-page {
+    font-family: $font-primary;
+    background-color: white;
+    color: #0d1e29;
+
+    .section-padding {
+        padding: 8rem 0;
+        @media (max-width: $breakpoint-desktop) {
+            padding: 4rem 0;
+        }
+        @include mobile {
+            padding: 3rem 0;
+        }
+    }
+
+    .container {
+        max-width: $breakpoint-large;
+        // width: 90%;
+        margin: 0 auto;
+    }
+
+
+
+    // Why Connective India Exists Section
+    .why-exist-section {
+        background-color: #f3f7f5; // Light green background
+        text-align: center;
+
+        .section-header {
+            max-width: 900px;
+            margin: 0 auto 5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media (max-width: $breakpoint-desktop) {
+                margin: 0 auto 2rem;
+            }
+
+            .section-label {
+                display: inline-flex;
+                align-items: center;
+                background-color: white;
+                padding: 5px 23px 5px 5px;
+                border-radius: 50px;
+                border: 1px solid #eee;
+                font-size: 1rem;
+                font-weight: 500;
+                color: #333;
+                margin-bottom: 1.5rem;
+                
+                .label-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 32px;
+                    height: 32px;
+                    background-color: $color-brand-green;
+                    color: white;
+                    border-radius: 50%;
+                    margin-right: 0.8rem;
+                    font-size: 0.9rem;
+                }
+            }
+
+            h2 {
+                font-size: 4rem;
+                font-weight: 700;
+                color: #0d1e29;
+                margin-bottom: 0;
+                letter-spacing: -0.02em;
+                line-height: 1.1;
+                @media (max-width: $breakpoint-desktop) {
+                    font-size: 3rem;
+                }
+
+                @media (max-width: $breakpoint-mobile) {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .section-subtitle {
+                font-size: 1.25rem;
+                color: #5f6c7b;
+                margin-top: 1.5rem;
+                max-width: 800px;
+                line-height: 1.5;
+                font-weight: 400;
+
+                @include mobile {
+                    font-size: 1rem;
+                    margin-top: 1rem;
+                    line-height: 1.4;
+                }
+            }
+        }
+
+        .exist-grid {
+            display: flex;
+            background: white;
+            border-radius: 32px;
+            overflow: hidden;
+            border: 1px solid #f0f0f0;
+            margin-top: 4rem;
+
+            @media (max-width: $breakpoint-desktop) {
+                flex-direction: column;
+                background: transparent;
+                border: none;
+                gap: 1.5rem;
+                overflow: visible;
+                margin-top: 2rem;
+            }
+        }
+
+        .exist-card {
+            flex: 1;
+            padding: 4rem 3rem;
+            text-align: center;
+            position: relative;
+            background: white;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+            @media (max-width: $breakpoint-desktop) {
+                border-radius: 24px;
+                padding: 3rem 2rem;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+                border: 1px solid rgba(0,0,0,0.03);
+            }
+
+            @include mobile {
+                padding: 2.5rem 1.5rem;
+            }
+
+            &:not(:last-child) {
+                border-right: 1px solid #f0f0f0;
+
+                @media (max-width: $breakpoint-desktop) {
+                    border-right: none;
+                }
+            }
+
+            &:hover {
+                background: #fafafa;
+                transform: translateY(-5px);
+                
+                @media (max-width: $breakpoint-desktop) {
+                    background: white;
+                    box-shadow: 0 15px 40px rgba($color-brand-green, 0.1);
+                }
+
+                .icon-box {
+                    transform: scale(1.1) rotate(5deg);
+                }
+            }
+
+            .icon-box {
+                width: 72px;
+                height: 72px;
+                border-radius: 22px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 2rem;
+                font-size: 1.8rem;
+                color: white;
+                transition: all 0.3s ease;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+                @include mobile {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 18px;
+                    font-size: 1.5rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                &.green { 
+                    background: linear-gradient(135deg, #56d081, #3dbd6b); 
+                    box-shadow: 0 8px 15px rgba(86, 208, 129, 0.3);
+                }
+                &.yellow { 
+                    background: linear-gradient(135deg, #fee17a, #f8d34d);
+                    box-shadow: 0 8px 15px rgba(254, 225, 122, 0.3);
+                }
+                &.orange { 
+                    background: linear-gradient(135deg, #ff916a, #ff7142);
+                    box-shadow: 0 8px 15px rgba(255, 145, 106, 0.3);
+                }
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: #0d1e29;
+                margin-bottom: 1rem;
+                text-transform: capitalize;
+
+                @include mobile {
+                    font-size: 1.35rem;
+                }
+            }
+
+            p {
+                font-size: 1.05rem;
+                color: #5f6c7b;
+                line-height: 1.6;
+                padding: 0 1rem;
+
+                @include mobile {
+                    font-size: 0.95rem;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    // Core Philosophy Section
+    .philosophy-section {
+        background-color: white;
+        text-align: center;
+
+        .section-header {
+            max-width: 900px;
+            margin: 0 auto 5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media (max-width: $breakpoint-desktop) {
+                margin: 0 auto 2rem;
+            }
+
+            .section-label {
+                display: inline-flex;
+                align-items: center;
+                background-color: white;
+                padding: 5px 23px 5px 5px;
+                border-radius: 50px;
+                border: 1px solid #eee;
+                font-size: 1rem;
+                font-weight: 500;
+                color: #333;
+                margin-bottom: 1.5rem;
+                
+                .label-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 32px;
+                    height: 32px;
+                    background-color: $color-brand-green;
+                    color: white;
+                    border-radius: 50%;
+                    margin-right: 0.8rem;
+                    font-size: 0.9rem;
+                }
+            }
+
+            h2 {
+                font-size: 4rem;
+                font-weight: 700;
+                color: #0d1e29;
+                margin-bottom: 0;
+                letter-spacing: -0.02em;
+                line-height: 1.1;
+                @media (max-width: $breakpoint-desktop) {
+                    font-size: 3rem;
+                }
+
+                @media (max-width: $breakpoint-mobile) {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        .philosophy-grid.checkerboard {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px; 
+            max-width: 1400px;
+            margin: 0 auto;
+
+            @media (max-width: $breakpoint-large) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (max-width: $breakpoint-desktop) {
+                gap: 10px;
+            }
+        }
+
+        .block {
+            aspect-ratio: 1 / 1.3;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            border-radius: 20px;
+
+            @media (max-width: $breakpoint-desktop) {
+                aspect-ratio: 1 / 1.1;
+                min-height: 250px;
+            }
+
+            @include mobile {
+                aspect-ratio: auto;
+                height: auto;
+                min-height: 220px;
+                border-radius: 16px;
+            }
+
+            &.text-block {
+                background-color: #f7fbf9;
+                padding: 30px;
+                text-align: left;
+                border: 1px solid rgba(0,0,0,0.03);
+                
+                @media (max-width: $breakpoint-desktop) {
+                    padding: 1.5rem;
+                    justify-content: center;
+                }
+
+                @include mobile {
+                    padding: 1.25rem;
+                }
+                
+                &.light {
+                    background-color: #ecf3f2;
+                }
+
+                .block-content {
+                    width: 100%;
+
+                    h4 {
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                        color: #0d1e29;
+                        margin-bottom: 0.75rem;
+                        text-transform: capitalize;
+
+                        @include mobile {
+                            font-size: 1.15rem;
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+
+                    p {
+                        font-size: 1.1rem;
+                        color: #5f6c7b;
+                        line-height: 1.4;
+                        margin: 0;
+
+                        @media (max-width: $breakpoint-desktop) {
+                            font-size: 0.95rem;
+                            line-height: 1.4;
+                        }
+
+                        @include mobile {
+                            font-size: 0.85rem;
+                        }
+                    }
+                }
+            }
+
+            &.image-block {
+                background-color: #f0f0f0;
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.6s ease;
+                }
+
+                &:hover img {
+                    transform: scale(1.08);
+                }
+            }
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+            }
+        }
+    }
+
+    // Split Content Section (Vision/Mission)
+    .split-content-section {
+        padding: 6rem 0;
+
+        @media (max-width: $breakpoint-desktop) {
+            padding: 4rem 0;
+        }
+
+        @include mobile {
+            padding: 2.5rem 0;
+        }
+
+        &.reverse {
+            .split-grid {
+                flex-direction: row-reverse;
+                @media (max-width: $breakpoint-desktop) {
+                    flex-direction: column-reverse;
+                }
+            }
+        }
+
+        .split-grid {
+            display: flex;
+            align-items: center;
+            gap: 6rem;
+
+            @media (max-width: $breakpoint-desktop) {
+                flex-direction: column-reverse;
+                gap: 3rem;
+                text-align: center;
+            }
+
+            @include mobile {
+                gap: 2rem;
+            }
+        }
+
+        .content-column {
+            flex: 1;
+
+            @media (max-width: $breakpoint-desktop) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .section-label {
+                display: inline-flex;
+                align-items: center;
+                background-color: white;
+                padding: 5px 23px 5px 5px;
+                border-radius: 50px;
+                border: 1px solid #eee;
+                font-size: 1rem;
+                font-weight: 500;
+                color: #333;
+                margin-bottom: 1.5rem;
+                
+                @include mobile {
+                    margin-bottom: 1rem;
+                }
+
+                .label-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 32px;
+                    height: 32px;
+                    background-color: $color-brand-green;
+                    color: white;
+                    border-radius: 50%;
+                    margin-right: 0.8rem;
+                    font-size: 0.9rem;
+                }
+            }
+            
+            h2 {
+                font-size: 4rem;
+                font-weight: 700;
+                line-height: 1.1;
+                color: #0d1e29;
+                margin-bottom: 1.5rem;
+                letter-spacing: -0.02em;
+
+                @media (max-width: $breakpoint-desktop) {
+                    font-size: 2.5rem;
+                }
+
+                @include mobile {
+                    font-size: 1.8rem;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .description {
+                font-size: 1.15rem;
+                line-height: 1.7;
+                color: #5f6c7b;
+                margin-bottom: 2rem;
+
+                @include mobile {
+                    font-size: 1.05rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+
+        .image-column {
+            flex: 1;
+            position: relative;
+        }
+
+        .main-image-wrapper {
+            position: relative;
+            width: 100%;
+            height: 450px;
+            border-radius: 40px;
+            overflow: hidden;
+
+            @media (max-width: $breakpoint-desktop) {
+                height: 350px;
+                border-radius: 30px;
+            }
+
+            @include mobile {
+                height: 250px;
+                border-radius: 20px;
+            }
+
+            .main-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: inherit;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            }
+        }
+
+        // Floating UI Cards
+        .floating-card {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+            border: 1px solid rgba(255,255,255,0.5);
+            animation: float 4s ease-in-out infinite;
+
+            @include mobile {
+                display: none;
+            }
+
+            &.trust-card {
+                bottom: -30px;
+                right: -20px;
+                width: 260px;
+
+                .card-header {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.75rem;
+                    margin-bottom: 1rem;
+                    font-weight: 600;
+                    color: #333;
+
+                    .icon {
+                        color: $color-brand-green;
+                        font-size: 1.25rem;
+                    }
+                }
+
+                .progress-bar {
+                    height: 8px;
+                    background: #eee;
+                    border-radius: 4px;
+                    margin-bottom: 0.5rem;
+                    overflow: hidden;
+
+                    .fill {
+                        height: 100%;
+                        background: $color-brand-green;
+                        border-radius: 4px;
+                    }
+                }
+
+                .stat {
+                    font-size: 0.85rem;
+                    color: #777;
+                }
+            }
+
+            &.donation-card {
+                bottom: 30px;
+                left: -40px;
+                width: 240px;
+                background: white;
+
+                .card-title {
+                    display: block;
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    margin-bottom: 1.5rem;
+                    color: #0d1e29;
+                }
+
+                .chart-bars {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    height: 80px;
+                    gap: 12px;
+
+                    .bar {
+                        width: 100%;
+                        background: #86efac;
+                        border-radius: 4px;
+                        position: relative;
+                        transition: height 1s ease;
+
+                        span {
+                            position: absolute;
+                            bottom: -20px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            font-size: 0.7rem;
+                            color: #999;
+                        }
+
+                        &.highlight {
+                            background: #22c55e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Culture Section (Dark)
+    .culture-section {
+        width: 100%;
+        background-color: #fff8f1; // deep dark green
+        font-family: $font-primary;
+        color: white;
+        .section-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .section-label {
+                display: inline-flex;
+                align-items: center;
+                background-color: white;
+                padding: 5px 23px 5px 5px;
+                border-radius: 50px;
+                border: 1px solid #eee;
+                font-size: 1rem;
+                font-weight: 500;
+                color: #333;
+                margin-bottom: 1.5rem;
+                
+                .label-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 32px;
+                    height: 32px;
+                    background-color: $color-brand-green;
+                    color: white;
+                    border-radius: 50%;
+                    margin-right: 0.8rem;
+                    font-size: 0.9rem;
+                }
+            }
+
+            h2 {
+                font-size: 4rem;
+                font-weight: 700;
+                color: black; // White for dark background
+                margin-bottom: 0;
+                letter-spacing: -0.02em;
+                line-height: 1.1;
+                @media (max-width: $breakpoint-desktop) {
+                    font-size: 3rem;
+                }
+
+                @media (max-width: $breakpoint-mobile) {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        .culture-sectionList{
+            width: 100%;
+            background: #eee;
+            border-radius: 24px;
+            overflow: hidden;
+            margin-top: 50px;
+            background-image: url(../../../public/principles.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 200px 40px 40px 40px;
+            position: relative;
+            z-index: 0;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.216), rgba(0, 0, 0, 0.839));
+                z-index: -1;
+            }
+        }
+
+        .principles-list {
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: center;
+            gap: 2rem;
+            h3{
+                font-size: 2.5em;
+                font-weight: 600;
+                color: white;
+                line-height: 1.2;
+                letter-spacing: normal;
+                margin: 0;
+                // text-align: center;
+                width: 70%;
+            }
+        }
+
+        .principle-item {
+            width: calc(100% / 2 - 1rem);
+            backdrop-filter: blur(15px);
+            background-color: #ffffff3b;
+            padding: 2.5rem;
+            border-radius: 20px;
+            
+            .principle-icon {
+                font-size: 2.5rem;
+                color: #50db82; /* Brand green or keep white? User likes icons. Let's try brand green */
+                display: flex;
+                background: white;
+                width: 60px;
+                height: 60px;
+                border-radius: 14px;
+                align-items: center;
+                justify-content: center;
+                svg{
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+
+            h4 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin: 0;
+                color: white;
+                margin-top: 15px;
+            }
+            p {
+                color: white;
+                margin: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    // Stands Apart (Governance)
+    .governance-section {
+        .governance-sectionMain {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            gap: 80px;
+
+            @media (max-width: $breakpoint-desktop) {
+                flex-direction: column;
+                gap: 3rem;
+                align-items: center;
+            }
+        }
+
+        .section-header {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            position: sticky;
+            top: 110px;
+
+            @media (max-width: $breakpoint-desktop) {
+                width: 100%;
+                position: static;
+                align-items: center;
+                text-align: center;
+            }
+
+            .section-label {
+                display: inline-flex;
+                align-items: center;
+                background-color: white;
+                padding: 5px 23px 5px 5px;
+                border-radius: 50px;
+                border: 1px solid #eee;
+                font-size: 1rem;
+                font-weight: 500;
+                color: #333;
+                margin-bottom: 1.5rem;
+                width: fit-content;
+
+                .label-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 32px;
+                    height: 32px;
+                    background-color: $color-brand-green;
+                    color: white;
+                    border-radius: 50%;
+                    margin-right: 0.8rem;
+                    font-size: 0.9rem;
+                }
+            }
+
+            h2 {
+                font-size: 4rem;
+                font-weight: 700;
+                color: #0d1e29;
+                margin-bottom: 0;
+                letter-spacing: -0.02em;
+                line-height: 1.1;
+
+                @media (max-width: $breakpoint-desktop) {
+                    font-size: 2.8rem;
+                }
+
+                @include mobile {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        .stands-apart-grid {
+            width: calc(100% - 50% - 80px);
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            @media (max-width: $breakpoint-desktop) {
+                width: 100%;
+                gap: 1.5rem;
+            }
+
+            .apart-item {
+                width: 100%;
+                text-align: left;
+                padding: 2.5rem;
+                background: white;
+                border: 1px solid #f0f0f0;
+                border-radius: 32px;
+                transition: all 0.3s ease;
+
+                @media (max-width: $breakpoint-desktop) {
+                    padding: 2rem;
+                    text-align: center;
+                }
+
+                @include mobile {
+                    padding: 1.5rem;
+                }
+
+                &:hover {
+                    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+                    transform: translateY(-5px);
+                    border-color: rgba($color-brand-green, 0.2);
+                }
+
+                .image {
+                    width: 100%;
+                    aspect-ratio: 16/9;
+                    overflow: hidden;
+                    border-radius: 20px;
+                    margin-bottom: 1.5rem;
+                    
+                    @include mobile {
+                        border-radius: 16px;
+                        margin-bottom: 1rem;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                h4 {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    color: #0d1e29;
+                    margin-bottom: 1rem;
+                    text-transform: capitalize;
+
+                    @include mobile {
+                        font-size: 1.25rem;
+                        margin-bottom: 0.75rem;
+                    }
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    color: #5f6c7b;
+                    line-height: 1.6;
+                    margin: 0;
+
+                    @include mobile {
+                        font-size: 0.95rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // Closing Goal
+    .experience-goal {
+        background-color: #f9fafb;
+        border-top: 1px solid #eee;
+
+        .section-header {
+            max-width: 900px;
+            margin: 0 auto 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .section-label {
+                display: inline-flex;
+                align-items: center;
+                background-color: white;
+                padding: 5px 23px 5px 5px;
+                border-radius: 50px;
+                border: 1px solid #eee;
+                font-size: 1rem;
+                font-weight: 500;
+                color: #333;
+                margin-bottom: 1.5rem;
+                
+                .label-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 32px;
+                    height: 32px;
+                    background-color: $color-brand-green;
+                    color: white;
+                    border-radius: 50%;
+                    margin-right: 0.8rem;
+                    font-size: 0.9rem;
+                }
+            }
+
+            h2 {
+                font-size: 3.5rem;
+                font-weight: 700;
+                color: #0d1e29;
+                margin-bottom: 0;
+                letter-spacing: -0.02em;
+                line-height: 1.1;
+                text-align: center;
+                @media (max-width: $breakpoint-desktop) {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        .goal-box {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #d7fdeb;
+            padding: 4rem;
+            border-radius: 32px;
+            text-align: center;
+            border: 1px solid #eee;
+            position: relative;
+            
+            @media (max-width: $breakpoint-desktop) {
+                padding: 3rem 2rem;
+                border-radius: 24px;
+            }
+
+            @include mobile {
+                padding: 2rem 1.5rem;
+                border-radius: 20px;
+            }
+
+            p {
+                font-size: 1.8rem;
+                color: #0d1e29;
+                font-weight: 500;
+                line-height: 1.5;
+                letter-spacing: -0.01em;
+
+                @media (max-width: $breakpoint-desktop) {
+                    font-size: 1.4rem;
+                }
+
+                @include mobile {
+                    font-size: 1.15rem;
+                }
+            }
+        }
+    }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}

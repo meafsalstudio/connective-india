@@ -1,0 +1,187 @@
+@import '../../styles/variables.scss';
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.what-is-connective-india-section {
+  padding: 8rem 0;
+  font-family: $font-primary;
+  background-color: $color-brand-green-light;
+  overflow: hidden;
+
+  @include tablet {
+    padding: 3rem 0;
+  }
+
+  .section-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 4rem;
+    max-width: $breakpoint-large;
+    width: 90%;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint-desktop) {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+
+  .left-content {
+    flex: 1;
+    max-width: 500px;
+
+    @media (max-width: $breakpoint-desktop) {
+      max-width: 100%;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      background-color: white;
+      padding: 5px 20px 5px 5px;
+      border-radius: 50px;
+      border: 1px solid #eee;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #333;
+      text-transform: none;
+      letter-spacing: 0;
+      margin-bottom: 1.5rem;
+
+      .label-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background-color: $color-brand-green;
+        color: white;
+        border-radius: 50%;
+        margin-right: 0.75rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    h2 {
+      font-family: $font-primary;
+      font-size: 4rem;
+      line-height: 1.1;
+      font-weight: 700;
+      color: #0d1e29;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.02em;
+
+      @include tablet {
+        font-size: 3rem;
+      }
+
+      @include mobile {
+        font-size: 1.8rem;
+      }
+    }
+
+    .description {
+      font-size: 1.125rem;
+      color: #5f6c7b;
+      line-height: 1.6;
+      margin-bottom: 3rem;
+    }
+
+    .culture-box {
+      padding: 2rem;
+      border-radius: 16px;
+      background: #279638;
+      position: relative;
+      z-index: 0;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: linear-gradient(to right, #d1d5db 1px, transparent 1px), linear-gradient(to bottom, #d1d5db 1px, transparent 1px);
+        background-size: 32px 32px;
+        -webkit-mask-image: radial-gradient(ellipse 60% 60% at 50% 50%, #000 30%, transparent 70%);
+        mask-image: radial-gradient(ellipse 60% 60% at 50% 50%, #000 30%, transparent 70%);
+        opacity: 0.3;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.5px;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: #fff;
+        margin-bottom: 0;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .right-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+      background-color: white;
+      border: 1px solid #edf2f7;
+      padding: 2rem;
+      border-radius: 16px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 100%;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+      }
+
+      .icon-wrapper {
+        width: 48px;
+        height: 48px;
+        background-color: rgba($color-brand-green, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        color: $color-brand-green;
+        font-size: 1.25rem;
+      }
+
+      h4 {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: #0d1e29;
+        margin-bottom: 0.75rem;
+        text-transform: capitalize;
+      }
+
+      p {
+        font-size: 0.9rem;
+        color: #5f6c7b;
+        line-height: 1.5;
+        margin: 0;
+      }
+    }
+  }
+}

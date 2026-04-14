@@ -1,0 +1,243 @@
+@import '../../styles/variables.scss';
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.get-started-section {
+  padding: 8rem 0;
+  // background-color: $color-brand-green-light;
+  background-color: white; // Main background is white now, card is yellow
+  text-align: center;
+  font-family: $font-primary;
+  overflow: hidden;
+
+  @include tablet {
+    padding: 6rem 0;
+  }
+
+  .section-label {
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px 20px 5px 5px;
+    border-radius: 50px;
+    border: 1px solid #eee;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-bottom: 1.5rem;
+
+    .label-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background-color: $color-brand-green;
+      color: white;
+      border-radius: 50%;
+      margin-right: 0.75rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  h2 {
+    font-family: $font-primary;
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #0d1e29;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+
+    @include tablet {
+      font-size: 3rem;
+    }
+
+    @include mobile {
+      font-size: 1.8rem;
+    }
+  }
+
+  .subtitle {
+    color: #5f6c7b;
+    margin-bottom: 4rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // New Yellow Card Container Style
+  .steps-container {
+    background-color: #fde047; // Yellow card background
+    border-radius: 30px;
+    padding: 30px 2rem 30px 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: $breakpoint-large;
+    width: 100%; // Taking more width for the strip look
+    margin: 0 auto;
+    position: relative;
+    gap: 2rem;
+    overflow: hidden; // For the wave effect
+
+    // Wave decoration (optional, using radial gradient to mimic)
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: radial-gradient(ellipse 50% 100% at 50% 100%, rgba(255, 255, 255, 0.3) 0%, transparent 60%);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      // gap: 4rem;
+      padding: 30px 20px;
+    }
+
+    
+
+    .steps-containerHead {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      @media (max-width: 768px) {
+   gap : 20px;
+      }
+     
+
+      @include tablet {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .step-card {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Center alignment as per image
+    // text-align: center;
+    max-width: calc(100% / 3 - 1px);
+    background: #ffeda8;
+    border-radius: 24px;
+    padding: 30px;
+
+    @include tablet {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .step-number {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: #000; // Black text
+      margin-bottom: 0.5rem;
+      line-height: 1;
+      display: none;
+    }
+
+    .icon-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      svg {
+        font-size: 1.3rem;
+      }
+    }
+
+    h4 {
+      display: block; // Repurposing h4 as the sub-label if needed
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      text-transform: capitalize;
+
+      letter-spacing: normal;
+      font-weight: 600;
+      color: #1f2937;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #1f2937;
+      line-height: 1.4;
+      font-weight: 400;
+    }
+  }
+
+  .actions-footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .download-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 24px;
+      border-radius: 14px;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      min-width: 180px;
+
+      @media (max-width: 510px) {
+        width: 100%;
+        justify-content: center;
+      }
+
+      &.apple {
+        background: #000;
+        color: #fff;
+      }
+
+      &.google {
+        background: #000;
+        color: #fff;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-icon {
+        font-size: 1.8rem;
+      }
+
+      .btn-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        span {
+          font-size: 0.75rem;
+          opacity: 0.8;
+          margin-bottom: -2px;
+        }
+
+        strong {
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

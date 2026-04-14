@@ -1,0 +1,67 @@
+.about-intro {
+  padding: 6rem 0 4rem;
+  background-color: white;
+}
+@media (max-width: 1024px) {
+  .about-intro {
+    padding: 4rem 0 2rem;
+  }
+}
+.about-intro .intro-content {
+  max-width: 1000px;
+  text-align: left;
+}
+.about-intro .intro-content .section-label {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 23px 5px 5px;
+  border-radius: 50px;
+  border: 1px solid #eee;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 2rem;
+}
+.about-intro .intro-content .section-label .label-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #154c35;
+  color: white;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+  font-size: 0.9rem;
+}
+.about-intro .intro-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #0d1e29;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 1024px) {
+  .about-intro .intro-content h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .about-intro .intro-content h1 {
+    font-size: 1.8rem;
+  }
+}
+.about-intro .intro-content .description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #5f6c7b;
+  font-weight: 400;
+  max-width: 950px;
+}
+@media (max-width: 1024px) {
+  .about-intro .intro-content .description {
+    font-size: 1.1rem;
+  }
+}/*# sourceMappingURL=AboutIntro.css.map */

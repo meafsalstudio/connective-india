@@ -1,0 +1,49 @@
+@import './variables';
+
+@mixin mobile {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  @media (max-width: 1800px) {
+      width: calc(100% - 100px);
+  }
+  @media (max-width: 1060px) {
+      width: calc(100% - 80px);
+  }
+  @media (max-width: 768px) {
+      width: calc(100% - 50px);
+  }
+  @media (max-width: 480px) {
+      width: calc(100% - 30px);
+  }
+}

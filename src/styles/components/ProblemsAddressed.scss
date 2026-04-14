@@ -1,0 +1,303 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.problems-addressed-section {
+  padding: 8rem 0;
+  font-family: $font-primary;
+  background-color: white;
+  overflow: hidden;
+
+  @include tablet {
+    padding: 3rem 0;
+  }
+
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    max-width: $breakpoint-large;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  // --- Top Center Header ---
+  .content-header.centered-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      background-color: white;
+      padding: 5px 20px 5px 5px;
+      border-radius: 50px;
+      border: 1px solid #eee;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #333;
+      text-transform: none;
+      letter-spacing: 0;
+      margin-bottom: 1.5rem;
+
+      .label-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background-color: $color-brand-green;
+        color: white;
+        border-radius: 50%;
+        margin-right: 0.75rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    h2 {
+      font-family: $font-primary;
+      font-size: 4rem;
+      line-height: 1.1;
+      font-weight: 700;
+      color: #0d1e29;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.02em;
+
+      @include tablet {
+        font-size: 3rem;
+      }
+
+      @include mobile {
+        font-size: 1.8rem;
+      }
+    }
+
+    .subtitle {
+      color: #5f6c7b;
+      font-size: 1.125rem;
+      line-height: 1.6;
+      margin: 0 auto;
+    }
+  }
+
+  // --- Split Layout Container ---
+  .split-layout {
+    display: flex;
+    align-items: center; // Align top or center? Center usually looks better. Top if content varies.
+    justify-content: space-between;
+    gap: 4rem;
+    width: 100%;
+
+    @media (max-width: $breakpoint-desktop) {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+
+  // --- Left Column: Image & Overlay ---
+  .image-column {
+    flex: 1;
+    width: 100%;
+
+    @media (max-width: $breakpoint-desktop) {
+      order: 2;
+    }
+
+    .image-wrapper {
+      position: relative;
+      border-radius: 24px;
+      overflow: visible;
+
+      @media (max-width: 600px) {
+        aspect-ratio: 2 / 3;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 24px;
+        display: block;
+        object-fit: cover;
+        background-color: #f0f0f0;
+      }
+
+      .overlay-card {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background: white;
+        padding: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        max-width: 280px;
+        width: 90%;
+        z-index: 2;
+
+        @include tablet {
+          right: 0;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 85%;
+        }
+
+        @media (max-width: 670px) {
+          width: calc(100% - 40px);
+          max-width: calc(100% - 40px);
+        }
+
+        .card-header {
+          margin-bottom: 1rem;
+
+          .icon-box {
+            width: 48px;
+            height: 48px;
+            background-color: #e6f7eb;
+            color: $color-brand-green;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+          }
+        }
+
+        h3 {
+          font-size: 1.25rem;
+          font-weight: 700;
+          color: #0d1e29;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: #5f6c7b;
+          margin-bottom: 1.5rem;
+          line-height: 1.4;
+        }
+
+        .stats-row {
+          display: flex;
+          justify-content: space-between;
+          border-top: 1px solid #edf2f7;
+          padding-top: 1rem;
+
+          .stat {
+            display: flex;
+            flex-direction: column;
+
+            .value {
+              font-size: 1.25rem;
+              font-weight: 800;
+              color: #0d1e29;
+            }
+
+            .label {
+              font-size: 0.8rem;
+              color: #5f6c7b;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // --- Right Column: Content Grid ---
+  .content-column {
+    flex: 1;
+    width: 100%;
+
+    @media (max-width: $breakpoint-desktop) {
+      order: 1;
+    }
+
+    .problems-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1.5rem;
+
+      @include mobile {
+        grid-template-columns: 1fr;
+      }
+
+      .problem-card {
+        background-color: white;
+        border: 1px solid #eee;
+        padding: 1.5rem;
+        border-radius: 20px;
+        text-align: left;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.05);
+        }
+
+        .icon-wrapper {
+          width: 48px;
+          height: 48px;
+          background-color: #fff5f5;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 1rem;
+          color: #e53e3e;
+          font-size: 1.25rem;
+        }
+
+        h3 {
+          font-size: 1.1rem;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+          color: #0d1e29;
+        }
+
+        .description {
+          width: 100%;
+
+          ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+              font-size: 0.95rem;
+              color: #5f6c7b;
+              line-height: 1.5;
+              margin-bottom: 0.25rem;
+
+              @include mobile {
+                padding-left: 1.25rem;
+                position: relative;
+                margin-bottom: 0.5rem;
+
+                &::before {
+                  content: "•";
+                  position: absolute;
+                  left: 0;
+                  color: $color-brand-green;
+                  font-weight: bold;
+                  font-size: 1.2rem;
+                  line-height: 1;
+                }
+              }
+            }
+          }
+
+          p {
+            font-size: 0.95rem;
+            color: #5f6c7b;
+            line-height: 1.5;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

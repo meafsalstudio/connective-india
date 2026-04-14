@@ -1,0 +1,1090 @@
+.about-carousel-section {
+  padding: 2rem 0 0rem;
+  position: relative;
+  overflow: hidden;
+}
+.about-carousel-section .carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.about-carousel-section .about-swiper {
+  padding: 2rem 0 5rem;
+  overflow: visible;
+}
+.about-carousel-section .swiper-slide {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.95;
+}
+.about-carousel-section .swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+.about-carousel-section .carousel-slide-inner {
+  width: 100%;
+  aspect-ratio: 3/2;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 1024px) {
+  .about-carousel-section .carousel-slide-inner {
+    border-radius: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .about-carousel-section .carousel-slide-inner {
+    border-radius: 20px;
+  }
+}
+.about-carousel-section .carousel-slide-inner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-carousel-section .swiper-button-next,
+.about-carousel-section .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  color: #000;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+@media (max-width: 576px) {
+  .about-carousel-section .swiper-button-next,
+  .about-carousel-section .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+}
+.about-carousel-section .swiper-button-next .swiper-navigation-icon,
+.about-carousel-section .swiper-button-prev .swiper-navigation-icon {
+  width: 10px;
+}
+.about-carousel-section .swiper-button-next::after,
+.about-carousel-section .swiper-button-prev::after {
+  font-size: 1rem;
+  font-weight: 800;
+}
+@media (max-width: 576px) {
+  .about-carousel-section .swiper-button-next::after,
+  .about-carousel-section .swiper-button-prev::after {
+    font-size: 0.8rem;
+  }
+}
+.about-carousel-section .swiper-button-next:hover,
+.about-carousel-section .swiper-button-prev:hover {
+  transform: scale(1.1);
+  background: #f8f9fa;
+}
+.about-carousel-section .swiper-button-prev {
+  left: 2%;
+}
+.about-carousel-section .swiper-button-next {
+  right: 2%;
+}
+.about-carousel-section .swiper-pagination {
+  bottom: 0px !important;
+}
+.about-carousel-section .swiper-pagination-bullet {
+  background: #ccc;
+  opacity: 0.6;
+  width: 8px;
+  height: 8px;
+  margin: 0 5px !important;
+  transition: all 0.3s ease;
+}
+.about-carousel-section .swiper-pagination-bullet-active {
+  background: #154c35;
+  width: 20px;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.about-page {
+  font-family: "Google Sans", "Roboto", "DM Sans", sans-serif;
+  background-color: white;
+  color: #0d1e29;
+}
+.about-page .section-padding {
+  padding: 8rem 0;
+}
+@media (max-width: 1024px) {
+  .about-page .section-padding {
+    padding: 4rem 0;
+  }
+}
+@media (max-width: 576px) {
+  .about-page .section-padding {
+    padding: 3rem 0;
+  }
+}
+.about-page .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about-page .why-exist-section {
+  background-color: #f3f7f5;
+  text-align: center;
+}
+.about-page .why-exist-section .section-header {
+  max-width: 900px;
+  margin: 0 auto 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .about-page .why-exist-section .section-header {
+    margin: 0 auto 2rem;
+  }
+}
+.about-page .why-exist-section .section-header .section-label {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 23px 5px 5px;
+  border-radius: 50px;
+  border: 1px solid #eee;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+.about-page .why-exist-section .section-header .section-label .label-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #154c35;
+  color: white;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+  font-size: 0.9rem;
+}
+.about-page .why-exist-section .section-header h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #0d1e29;
+  margin-bottom: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+@media (max-width: 1024px) {
+  .about-page .why-exist-section .section-header h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .about-page .why-exist-section .section-header h2 {
+    font-size: 1.8rem;
+  }
+}
+.about-page .why-exist-section .section-header .section-subtitle {
+  font-size: 1.25rem;
+  color: #5f6c7b;
+  margin-top: 1.5rem;
+  max-width: 800px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+@media (max-width: 576px) {
+  .about-page .why-exist-section .section-header .section-subtitle {
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+  }
+}
+.about-page .why-exist-section .exist-grid {
+  display: flex;
+  background: white;
+  border-radius: 32px;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+  margin-top: 4rem;
+}
+@media (max-width: 1024px) {
+  .about-page .why-exist-section .exist-grid {
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    gap: 1.5rem;
+    overflow: visible;
+    margin-top: 2rem;
+  }
+}
+.about-page .why-exist-section .exist-card {
+  flex: 1;
+  padding: 4rem 3rem;
+  text-align: center;
+  position: relative;
+  background: white;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (max-width: 1024px) {
+  .about-page .why-exist-section .exist-card {
+    border-radius: 24px;
+    padding: 3rem 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+  }
+}
+@media (max-width: 576px) {
+  .about-page .why-exist-section .exist-card {
+    padding: 2.5rem 1.5rem;
+  }
+}
+.about-page .why-exist-section .exist-card:not(:last-child) {
+  border-right: 1px solid #f0f0f0;
+}
+@media (max-width: 1024px) {
+  .about-page .why-exist-section .exist-card:not(:last-child) {
+    border-right: none;
+  }
+}
+.about-page .why-exist-section .exist-card:hover {
+  background: #fafafa;
+  transform: translateY(-5px);
+}
+@media (max-width: 1024px) {
+  .about-page .why-exist-section .exist-card:hover {
+    background: white;
+    box-shadow: 0 15px 40px rgba(21, 76, 53, 0.1);
+  }
+}
+.about-page .why-exist-section .exist-card:hover .icon-box {
+  transform: scale(1.1) rotate(5deg);
+}
+.about-page .why-exist-section .exist-card .icon-box {
+  width: 72px;
+  height: 72px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  font-size: 1.8rem;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 576px) {
+  .about-page .why-exist-section .exist-card .icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.about-page .why-exist-section .exist-card .icon-box.green {
+  background: linear-gradient(135deg, #56d081, #3dbd6b);
+  box-shadow: 0 8px 15px rgba(86, 208, 129, 0.3);
+}
+.about-page .why-exist-section .exist-card .icon-box.yellow {
+  background: linear-gradient(135deg, #fee17a, #f8d34d);
+  box-shadow: 0 8px 15px rgba(254, 225, 122, 0.3);
+}
+.about-page .why-exist-section .exist-card .icon-box.orange {
+  background: linear-gradient(135deg, #ff916a, #ff7142);
+  box-shadow: 0 8px 15px rgba(255, 145, 106, 0.3);
+}
+.about-page .why-exist-section .exist-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0d1e29;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+@media (max-width: 576px) {
+  .about-page .why-exist-section .exist-card h3 {
+    font-size: 1.35rem;
+  }
+}
+.about-page .why-exist-section .exist-card p {
+  font-size: 1.05rem;
+  color: #5f6c7b;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+@media (max-width: 576px) {
+  .about-page .why-exist-section .exist-card p {
+    font-size: 0.95rem;
+    padding: 0;
+  }
+}
+.about-page .philosophy-section {
+  background-color: white;
+  text-align: center;
+}
+.about-page .philosophy-section .section-header {
+  max-width: 900px;
+  margin: 0 auto 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .about-page .philosophy-section .section-header {
+    margin: 0 auto 2rem;
+  }
+}
+.about-page .philosophy-section .section-header .section-label {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 23px 5px 5px;
+  border-radius: 50px;
+  border: 1px solid #eee;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+.about-page .philosophy-section .section-header .section-label .label-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #154c35;
+  color: white;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+  font-size: 0.9rem;
+}
+.about-page .philosophy-section .section-header h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #0d1e29;
+  margin-bottom: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+@media (max-width: 1024px) {
+  .about-page .philosophy-section .section-header h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .about-page .philosophy-section .section-header h2 {
+    font-size: 1.8rem;
+  }
+}
+.about-page .philosophy-section .philosophy-grid.checkerboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .about-page .philosophy-section .philosophy-grid.checkerboard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1024px) {
+  .about-page .philosophy-section .philosophy-grid.checkerboard {
+    gap: 10px;
+  }
+}
+.about-page .philosophy-section .block {
+  aspect-ratio: 1/1.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: 20px;
+}
+@media (max-width: 1024px) {
+  .about-page .philosophy-section .block {
+    aspect-ratio: 1/1.1;
+    min-height: 250px;
+  }
+}
+@media (max-width: 576px) {
+  .about-page .philosophy-section .block {
+    aspect-ratio: auto;
+    height: auto;
+    min-height: 220px;
+    border-radius: 16px;
+  }
+}
+.about-page .philosophy-section .block.text-block {
+  background-color: #f7fbf9;
+  padding: 30px;
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+@media (max-width: 1024px) {
+  .about-page .philosophy-section .block.text-block {
+    padding: 1.5rem;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .about-page .philosophy-section .block.text-block {
+    padding: 1.25rem;
+  }
+}
+.about-page .philosophy-section .block.text-block.light {
+  background-color: #ecf3f2;
+}
+.about-page .philosophy-section .block.text-block .block-content {
+  width: 100%;
+}
+.about-page .philosophy-section .block.text-block .block-content h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0d1e29;
+  margin-bottom: 0.75rem;
+  text-transform: capitalize;
+}
+@media (max-width: 576px) {
+  .about-page .philosophy-section .block.text-block .block-content h4 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.about-page .philosophy-section .block.text-block .block-content p {
+  font-size: 1.1rem;
+  color: #5f6c7b;
+  line-height: 1.4;
+  margin: 0;
+}
+@media (max-width: 1024px) {
+  .about-page .philosophy-section .block.text-block .block-content p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+}
+@media (max-width: 576px) {
+  .about-page .philosophy-section .block.text-block .block-content p {
+    font-size: 0.85rem;
+  }
+}
+.about-page .philosophy-section .block.image-block {
+  background-color: #f0f0f0;
+}
+.about-page .philosophy-section .block.image-block img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.about-page .philosophy-section .block.image-block:hover img {
+  transform: scale(1.08);
+}
+.about-page .philosophy-section .block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+.about-page .split-content-section {
+  padding: 6rem 0;
+}
+@media (max-width: 1024px) {
+  .about-page .split-content-section {
+    padding: 4rem 0;
+  }
+}
+@media (max-width: 576px) {
+  .about-page .split-content-section {
+    padding: 2.5rem 0;
+  }
+}
+.about-page .split-content-section.reverse .split-grid {
+  flex-direction: row-reverse;
+}
+@media (max-width: 1024px) {
+  .about-page .split-content-section.reverse .split-grid {
+    flex-direction: column-reverse;
+  }
+}
+.about-page .split-content-section .split-grid {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+@media (max-width: 1024px) {
+  .about-page .split-content-section .split-grid {
+    flex-direction: column-reverse;
+    gap: 3rem;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .about-page .split-content-section .split-grid {
+    gap: 2rem;
+  }
+}
+.about-page .split-content-section .content-column {
+  flex: 1;
+}
+@media (max-width: 1024px) {
+  .about-page .split-content-section .content-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+.about-page .split-content-section .content-column .section-label {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 23px 5px 5px;
+  border-radius: 50px;
+  border: 1px solid #eee;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 576px) {
+  .about-page .split-content-section .content-column .section-label {
+    margin-bottom: 1rem;
+  }
+}
+.about-page .split-content-section .content-column .section-label .label-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #154c35;
+  color: white;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+  font-size: 0.9rem;
+}
+.about-page .split-content-section .content-column h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #0d1e29;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 1024px) {
+  .about-page .split-content-section .content-column h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .about-page .split-content-section .content-column h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}
+.about-page .split-content-section .content-column .description {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #5f6c7b;
+  margin-bottom: 2rem;
+}
+@media (max-width: 576px) {
+  .about-page .split-content-section .content-column .description {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.about-page .split-content-section .image-column {
+  flex: 1;
+  position: relative;
+}
+.about-page .split-content-section .main-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+@media (max-width: 1024px) {
+  .about-page .split-content-section .main-image-wrapper {
+    height: 350px;
+    border-radius: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .about-page .split-content-section .main-image-wrapper {
+    height: 250px;
+    border-radius: 20px;
+  }
+}
+.about-page .split-content-section .main-image-wrapper .main-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+.about-page .split-content-section .floating-card {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  animation: float 4s ease-in-out infinite;
+}
+@media (max-width: 576px) {
+  .about-page .split-content-section .floating-card {
+    display: none;
+  }
+}
+.about-page .split-content-section .floating-card.trust-card {
+  bottom: -30px;
+  right: -20px;
+  width: 260px;
+}
+.about-page .split-content-section .floating-card.trust-card .card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+.about-page .split-content-section .floating-card.trust-card .card-header .icon {
+  color: #154c35;
+  font-size: 1.25rem;
+}
+.about-page .split-content-section .floating-card.trust-card .progress-bar {
+  height: 8px;
+  background: #eee;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+.about-page .split-content-section .floating-card.trust-card .progress-bar .fill {
+  height: 100%;
+  background: #154c35;
+  border-radius: 4px;
+}
+.about-page .split-content-section .floating-card.trust-card .stat {
+  font-size: 0.85rem;
+  color: #777;
+}
+.about-page .split-content-section .floating-card.donation-card {
+  bottom: 30px;
+  left: -40px;
+  width: 240px;
+  background: white;
+}
+.about-page .split-content-section .floating-card.donation-card .card-title {
+  display: block;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #0d1e29;
+}
+.about-page .split-content-section .floating-card.donation-card .chart-bars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 80px;
+  gap: 12px;
+}
+.about-page .split-content-section .floating-card.donation-card .chart-bars .bar {
+  width: 100%;
+  background: #86efac;
+  border-radius: 4px;
+  position: relative;
+  transition: height 1s ease;
+}
+.about-page .split-content-section .floating-card.donation-card .chart-bars .bar span {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.7rem;
+  color: #999;
+}
+.about-page .split-content-section .floating-card.donation-card .chart-bars .bar.highlight {
+  background: #22c55e;
+}
+.about-page .culture-section {
+  width: 100%;
+  background-color: #fff8f1;
+  font-family: "Google Sans", "Roboto", "DM Sans", sans-serif;
+  color: white;
+}
+.about-page .culture-section .section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-page .culture-section .section-header .section-label {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 23px 5px 5px;
+  border-radius: 50px;
+  border: 1px solid #eee;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+.about-page .culture-section .section-header .section-label .label-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #154c35;
+  color: white;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+  font-size: 0.9rem;
+}
+.about-page .culture-section .section-header h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+@media (max-width: 1024px) {
+  .about-page .culture-section .section-header h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .about-page .culture-section .section-header h2 {
+    font-size: 1.8rem;
+  }
+}
+.about-page .culture-section .culture-sectionList {
+  width: 100%;
+  background: #eee;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-top: 50px;
+  background-image: url(../../../public/principles.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 200px 40px 40px 40px;
+  position: relative;
+  z-index: 0;
+}
+.about-page .culture-section .culture-sectionList::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.216), rgba(0, 0, 0, 0.839));
+  z-index: -1;
+}
+.about-page .culture-section .principles-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.about-page .culture-section .principles-list h3 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: white;
+  line-height: 1.2;
+  letter-spacing: normal;
+  margin: 0;
+  width: 70%;
+}
+.about-page .culture-section .principle-item {
+  width: calc(50% - 1rem);
+  backdrop-filter: blur(15px);
+  background-color: rgba(255, 255, 255, 0.231372549);
+  padding: 2.5rem;
+  border-radius: 20px;
+}
+.about-page .culture-section .principle-item .principle-icon {
+  font-size: 2.5rem;
+  color: #50db82; /* Brand green or keep white? User likes icons. Let's try brand green */
+  display: flex;
+  background: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  align-items: center;
+  justify-content: center;
+}
+.about-page .culture-section .principle-item .principle-icon svg {
+  width: 28px;
+  height: 28px;
+}
+.about-page .culture-section .principle-item h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+  margin-top: 15px;
+}
+.about-page .culture-section .principle-item p {
+  color: white;
+  margin: 0;
+  margin-top: 10px;
+}
+.about-page .governance-section .governance-sectionMain {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+}
+@media (max-width: 1024px) {
+  .about-page .governance-section .governance-sectionMain {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+}
+.about-page .governance-section .section-header {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 110px;
+}
+@media (max-width: 1024px) {
+  .about-page .governance-section .section-header {
+    width: 100%;
+    position: static;
+    align-items: center;
+    text-align: center;
+  }
+}
+.about-page .governance-section .section-header .section-label {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 23px 5px 5px;
+  border-radius: 50px;
+  border: 1px solid #eee;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.about-page .governance-section .section-header .section-label .label-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #154c35;
+  color: white;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+  font-size: 0.9rem;
+}
+.about-page .governance-section .section-header h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #0d1e29;
+  margin-bottom: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+@media (max-width: 1024px) {
+  .about-page .governance-section .section-header h2 {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 576px) {
+  .about-page .governance-section .section-header h2 {
+    font-size: 1.8rem;
+  }
+}
+.about-page .governance-section .stands-apart-grid {
+  width: calc(50% - 80px);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (max-width: 1024px) {
+  .about-page .governance-section .stands-apart-grid {
+    width: 100%;
+    gap: 1.5rem;
+  }
+}
+.about-page .governance-section .stands-apart-grid .apart-item {
+  width: 100%;
+  text-align: left;
+  padding: 2.5rem;
+  background: white;
+  border: 1px solid #f0f0f0;
+  border-radius: 32px;
+  transition: all 0.3s ease;
+}
+@media (max-width: 1024px) {
+  .about-page .governance-section .stands-apart-grid .apart-item {
+    padding: 2rem;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .about-page .governance-section .stands-apart-grid .apart-item {
+    padding: 1.5rem;
+  }
+}
+.about-page .governance-section .stands-apart-grid .apart-item:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  transform: translateY(-5px);
+  border-color: rgba(21, 76, 53, 0.2);
+}
+.about-page .governance-section .stands-apart-grid .apart-item .image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 576px) {
+  .about-page .governance-section .stands-apart-grid .apart-item .image {
+    border-radius: 16px;
+    margin-bottom: 1rem;
+  }
+}
+.about-page .governance-section .stands-apart-grid .apart-item .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-page .governance-section .stands-apart-grid .apart-item h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0d1e29;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+@media (max-width: 576px) {
+  .about-page .governance-section .stands-apart-grid .apart-item h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+}
+.about-page .governance-section .stands-apart-grid .apart-item p {
+  font-size: 1.1rem;
+  color: #5f6c7b;
+  line-height: 1.6;
+  margin: 0;
+}
+@media (max-width: 576px) {
+  .about-page .governance-section .stands-apart-grid .apart-item p {
+    font-size: 0.95rem;
+  }
+}
+.about-page .experience-goal {
+  background-color: #f9fafb;
+  border-top: 1px solid #eee;
+}
+.about-page .experience-goal .section-header {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-page .experience-goal .section-header .section-label {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 23px 5px 5px;
+  border-radius: 50px;
+  border: 1px solid #eee;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+.about-page .experience-goal .section-header .section-label .label-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #154c35;
+  color: white;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+  font-size: 0.9rem;
+}
+.about-page .experience-goal .section-header h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #0d1e29;
+  margin-bottom: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .about-page .experience-goal .section-header h2 {
+    font-size: 1.8rem;
+  }
+}
+.about-page .experience-goal .goal-box {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #d7fdeb;
+  padding: 4rem;
+  border-radius: 32px;
+  text-align: center;
+  border: 1px solid #eee;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .about-page .experience-goal .goal-box {
+    padding: 3rem 2rem;
+    border-radius: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .about-page .experience-goal .goal-box {
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+  }
+}
+.about-page .experience-goal .goal-box p {
+  font-size: 1.8rem;
+  color: #0d1e29;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+@media (max-width: 1024px) {
+  .about-page .experience-goal .goal-box p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 576px) {
+  .about-page .experience-goal .goal-box p {
+    font-size: 1.15rem;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}/*# sourceMappingURL=About.css.map */

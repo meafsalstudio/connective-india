@@ -1,0 +1,109 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.clientLogo {
+    padding: 3rem 0;
+    background: #f7f7f7;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+
+    .marqueeContainer {
+        display: flex;
+        overflow: hidden;
+        user-select: none;
+        gap: 2rem;
+        position: relative;
+        padding: 1rem 0;
+
+        @include tablet {
+            gap: 1.5rem;
+        }
+
+        @include mobile {
+            gap: 1rem;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 10rem;
+            height: 100%;
+            z-index: 2;
+        }
+
+        &::before {
+            left: 0;
+            background: linear-gradient(to right, #f7f7f7 0%, transparent 100%);
+        }
+
+        &::after {
+            right: 0;
+            background: linear-gradient(to left, #f7f7f7 0%, transparent 100%);
+        }
+    }
+
+    .marqueeContent {
+        flex-shrink: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 100%;
+        gap: 2rem;
+        animation: scroll 40s linear infinite;
+
+        @include tablet {
+            gap: 1.5rem;
+        }
+
+        @include mobile {
+            gap: 1rem;
+        }
+
+        .logoItem {
+            flex: 0 0 auto;
+            width: 150px;
+            // height: 60px;
+            aspect-ratio: 3 / 1.8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // filter: grayscale(100%) opacity(0.6);
+            transition: all 0.3s ease;
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+
+            @include tablet {
+                width: 130px;
+            }
+
+            @include mobile {
+                width: 110px;
+            }
+
+            &:hover {
+                filter: grayscale(0%) opacity(1);
+                transform: scale(1.1);
+            }
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - 4rem));
+    }
+}

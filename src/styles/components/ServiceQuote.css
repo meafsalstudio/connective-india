@@ -1,0 +1,182 @@
+.service-quote-section {
+  padding: 8rem 0;
+  background-color: white;
+  text-align: center;
+  font-family: "Google Sans", "Roboto", "DM Sans", sans-serif;
+  overflow: hidden;
+}
+@media (max-width: 1024px) {
+  .service-quote-section {
+    padding: 3rem 0;
+  }
+}
+.service-quote-section .quote-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rem;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .service-quote-section .quote-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}
+.service-quote-section .text-side {
+  flex: 1.2;
+  text-align: left;
+}
+@media (max-width: 1024px) {
+  .service-quote-section .text-side {
+    text-align: center;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: none;
+  }
+}
+.service-quote-section .quote-text {
+  font-family: "Google Sans", "Roboto", "DM Sans", sans-serif;
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #0d1e29;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 1024px) {
+  .service-quote-section .quote-text {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .service-quote-section .quote-text {
+    font-size: 1.6rem;
+  }
+}
+.service-quote-section .quote-text .highlight {
+  color: green;
+  font-weight: 700;
+  font-style: normal;
+}
+.service-quote-section .textBox {
+  width: 100%;
+  padding: 20px 30px;
+  background-color: rgb(240, 255, 240);
+  margin-top: 20px;
+  border-radius: 20px;
+}
+@media (max-width: 576px) {
+  .service-quote-section .textBox {
+    padding: 15px 20px;
+    margin-top: 15px;
+    max-width: 90%;
+  }
+}
+.service-quote-section .textBox p {
+  font-size: 2.2em;
+  line-height: 1.4;
+  color: green;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+@media (max-width: 576px) {
+  .service-quote-section .textBox p {
+    font-size: 1.2rem;
+  }
+}
+.service-quote-section .textBox p span {
+  color: green;
+  font-weight: 800;
+}
+.service-quote-section .mockup-side {
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-end;
+  perspective: 1000px;
+  min-height: 640px;
+}
+@media (max-width: 1024px) {
+  .service-quote-section .mockup-side {
+    justify-content: center;
+    width: 100%;
+    perspective: 1000px;
+    min-height: 300px;
+    margin-top: 0.5rem;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+}
+.service-quote-section .mockup-side .phone-mockup {
+  width: 320px;
+  height: 640px;
+  background: #1a1a1a;
+  border-radius: 40px;
+  padding: 12px;
+  box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0 -2px 10px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  transform-style: preserve-3d;
+}
+@media (max-width: 576px) {
+  .service-quote-section .mockup-side .phone-mockup {
+    width: 210px;
+    height: 420px;
+    margin-bottom: 40px;
+  }
+}
+.service-quote-section .mockup-side .phone-mockup .phone-bezel {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #222;
+}
+.service-quote-section .mockup-side .phone-mockup .phone-screen {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.service-quote-section .mockup-side .phone-mockup .phone-screen .mockup-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  -o-object-position: top;
+     object-position: top;
+}
+.service-quote-section .mockup-side .phone-mockup .phone-screen .mockup-img.active {
+  opacity: 1;
+}
+.service-quote-section .mockup-side .phone-mockup .phone-notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 28px;
+  background: #000;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  z-index: 10;
+}
+.service-quote-section .mockup-side .phone-mockup .phone-notch::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 7px;
+  background: #111;
+  border-radius: 20px;
+}/*# sourceMappingURL=ServiceQuote.css.map */

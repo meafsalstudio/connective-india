@@ -1,0 +1,232 @@
+.homeService {
+  width: 100%;
+  background: #000f21;
+  padding: 8rem 0px;
+}
+@media (max-width: 768px) {
+  .homeService {
+    padding: 6rem 0;
+  }
+}
+.homeService .homeServiceHead {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.homeService .homeServiceHead .section-label {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 20px 5px 5px;
+  border-radius: 50px;
+  border: 1px solid #eee;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 1.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.homeService .homeServiceHead .section-label .label-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #154c35;
+  color: white;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  font-size: 0.9rem;
+}
+.homeService .homeServiceHead h2 {
+  font-family: "Google Sans", "Roboto", "DM Sans", sans-serif;
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+  max-width: 75%;
+}
+@media (max-width: 768px) {
+  .homeService .homeServiceHead h2 {
+    font-size: 3rem;
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .homeService .homeServiceHead h2 {
+    font-size: 1.8rem;
+  }
+}
+.homeService .homeServiceHead h2 sup {
+  font-size: 14px;
+  top: -15px;
+  position: relative;
+}
+.homeService .homeServiceHead .description {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.4;
+  margin-bottom: 2.5rem;
+  max-width: 650px;
+}
+@media (max-width: 768px) {
+  .homeService .homeServiceHead .description {
+    max-width: 100%;
+  }
+}
+@keyframes vibrateArrow {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(2px);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(2px);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.homeService .homeServiceMain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.homeService .homeServiceMain .homeServiceCol {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .homeService .homeServiceMain .homeServiceCol {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+}
+.homeService .homeServiceMain .homeServiceCol:nth-of-type(1) .homeServiceItem:nth-of-type(1) .homeServiceItemDetails {
+  background: linear-gradient(rgba(4, 31, 150, 0), rgba(4, 31, 150, 0.5019607843), #041f96);
+}
+.homeService .homeServiceMain .homeServiceCol:nth-of-type(1) .homeServiceItem:nth-of-type(2) .homeServiceItemDetails {
+  background: linear-gradient(rgba(156, 70, 8, 0), rgba(156, 70, 8, 0.5019607843), #9c4608);
+}
+.homeService .homeServiceMain .homeServiceCol .homeServiceItem {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background: #133728;
+  overflow: hidden;
+  position: relative;
+  border-radius: 32px;
+}
+@media (max-width: 576px) {
+  .homeService .homeServiceMain .homeServiceCol .homeServiceItem {
+    height: 400px;
+  }
+}
+.homeService .homeServiceMain .homeServiceCol .homeServiceItem .homeServiceItemThumbnail {
+  width: 100%;
+  height: 100%;
+}
+.homeService .homeServiceMain .homeServiceCol .homeServiceItem .homeServiceItemThumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.8s ease;
+}
+.homeService .homeServiceMain .homeServiceCol .homeServiceItem:hover .homeServiceItemThumbnail img {
+  transform: scale(1.1);
+}
+.homeService .homeServiceMain .homeServiceCol .homeServiceItem .homeServiceItemDetails {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+}
+@media (max-width: 576px) {
+  .homeService .homeServiceMain .homeServiceCol .homeServiceItem .homeServiceItemDetails {
+    padding: 25px;
+  }
+}
+.homeService .homeServiceMain .homeServiceCol .homeServiceItem .homeServiceItemDetails h3 {
+  font-size: 34px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: -0.01em;
+}
+@media (max-width: 576px) {
+  .homeService .homeServiceMain .homeServiceCol .homeServiceItem .homeServiceItemDetails h3 {
+    font-size: 24px;
+  }
+}
+.homeService .homeServiceMain .homeServiceCol .homeServiceItem .homeServiceItemDetails p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  max-width: 90%;
+}
+.homeService .homeServiceMain .homeServiceCol .homeServiceItem .homeServiceItemDetails .card-btn-wrapper .card-vibrating-btn {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.homeService .homeServiceMain .homeServiceCol .homeServiceItem .homeServiceItemDetails .card-btn-wrapper .card-vibrating-btn .arrow-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  font-size: 1.1rem;
+  animation: vibrateArrow 1.5s infinite;
+  transition: all 0.3s ease;
+}
+.homeService .homeServiceMain .homeServiceCol .homeServiceItem .homeServiceItemDetails .card-btn-wrapper .card-vibrating-btn:hover .arrow-icon {
+  background: white;
+  color: black;
+  animation: none;
+  transform: translateX(5px);
+}
+.homeService .homeServiceMain .homeServiceCol .box1 {
+  width: 55%;
+}
+@media (max-width: 768px) {
+  .homeService .homeServiceMain .homeServiceCol .box1 {
+    width: 100%;
+  }
+}
+.homeService .homeServiceMain .homeServiceCol .box2 {
+  width: calc(45% - 20px);
+}
+@media (max-width: 768px) {
+  .homeService .homeServiceMain .homeServiceCol .box2 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=homeService.css.map */
