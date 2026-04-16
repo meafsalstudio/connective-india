@@ -2,48 +2,57 @@
 import React from 'react';
 import PageBanner from '../../components/PageBanner';
 import '../../styles/pages/Legal.scss';
+import { useLanguage } from '../../context/LanguageContext';
 
 const TermsPage = () => {
+    const { t } = useLanguage();
+
     return (
         <div className="terms-page legal-page">
             <PageBanner
-                title="Terms & Conditions"
-                subtitle="Please read our terms of service carefully."
-                label="Legal"
+                title={t('termsOfUse.banner.title')}
+                subtitle={t('termsOfUse.banner.subtitle')}
+                label={t('termsOfUse.banner.label')}
                 bgImage="/principles.webp"
             />
-            
+
             <section className="legal-content">
                 <div className="container">
-                    <span className="last-updated">Last Updated: January 24, 2026</span>
+                    <span className="last-updated">{t('termsOfUse.lastUpdated')}</span>
 
                     <div className="content-block">
-                        <h3>1. Introduction</h3>
-                        <p>Welcome to Connective India. By accessing or using our website and services, you agree to comply with and be bound by the following terms and conditions.</p>
+                        <h3>{t('termsOfUse.section1')}</h3>
                     </div>
 
                     <div className="content-block">
-                        <h3>2. Use of services</h3>
+                        <h3>{t('termsOfUse.section2')}</h3>
+                    </div>
+
+                    <div className="content-block">
+                        <h3>{t('termsOfUse.section3.title')}</h3>
+                        <p>{t('termsOfUse.section3.desc')}</p>
                         <ul>
-                            <li>You agree to use our services only for lawful purposes.</li>
-                            <li>You must not use our platform to distribute spam or malicious content.</li>
-                            <li>We reserve the right to suspend or terminate access for violations of these terms.</li>
+                            <li><b>{t('termsOfUse.section3.chargeOptions.oneTimeCharge')}</b> {t('termsOfUse.section3.chargeOptions.oneTimeChargeDesc')}</li>
+                            <li><b>{t('termsOfUse.section3.chargeOptions.nonRenewing')}</b> {t('termsOfUse.section3.chargeOptions.nonRenewingDesc')}</li>
+                            <li><b>{t('termsOfUse.section3.chargeOptions.payment')}</b> {t('termsOfUse.section3.chargeOptions.paymentDesc')}</li>
                         </ul>
                     </div>
 
                     <div className="content-block">
-                        <h3>3. Intellectual Property</h3>
-                        <p>All content included on this site, such as text, graphics, logos, and images, is the property of Connective India or its content suppliers and protected by international copyright laws.</p>
+                        <h3>{t('termsOfUse.section4')}</h3>
                     </div>
 
                     <div className="content-block">
-                        <h3>4. Limitation of Liability</h3>
-                        <p>Connective India shall not be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use our services.</p>
+                        <h3>{t('termsOfUse.section5')}</h3>
                     </div>
 
                     <div className="content-block">
-                        <h3>5. Changes to Terms</h3>
-                        <p>We reserve the right to modify these terms at any time. Your continued use of the site after changes are posted constitutes your acceptance of the new terms.</p>
+                        <h3>{t('termsOfUse.section6')}</h3>
+                        <a href="mailto:cu@connectiveindia.in">cu@connectiveindia.in</a>
+                    </div>
+                    <div className="content-block">
+                        <h3>{t('termsOfUse.section7')}</h3>
+                        <p>{t('termsOfUse.addressDetail')}</p>
                     </div>
                 </div>
             </section>

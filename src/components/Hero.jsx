@@ -42,7 +42,7 @@ const Hero = () => {
                                 <span className="big">{t('hero.appStore')}</span>
                             </div>
                         </a>
-                        <a href="#" className="app-btn google">
+                        <a href="https://play.google.com/store/apps/details?id=in.connectiveindia.connectiveindia" target='_blank' className="app-btn google">
                             <FaGooglePlay className="icon" />
                             <div className="btn-text">
                                 <span className="small">{t('hero.getItOn')}</span>

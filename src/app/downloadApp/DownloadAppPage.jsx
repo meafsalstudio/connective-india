@@ -24,7 +24,7 @@ const DownloadAppPage = () => {
                                     <strong>{t('hero.appStore')}</strong>
                                 </div>
                             </a>
-                            <a href="#" className="store-btn google">
+                            <a href="https://play.google.com/store/apps/details?id=in.connectiveindia.connectiveindia" target='_blank' className="store-btn google">
                                 <FaGooglePlay className="icon" />
                                 <div className="text">
                                     <span>{t('hero.getItOn')}</span>
@@ -36,11 +36,11 @@ const DownloadAppPage = () => {
 
                     <div className="qr-side">
                         <div className="qr-box">
-                            <FaQrcode className="qr-placeholder" />
+                            {/* <FaQrcode className="qr-placeholder" /> */}
                             {/* Ideally replace with an <img> tag when actual QR code is available */}
-                            {/* <img src="/qr-code.png" alt="Scan to download" /> */}
+                            <img src="/appImg.webp" alt="Scan to download" />
                         </div>
-                        <span className="scan-text">{t('downloadApp.scanToDownload')}</span>
+                        {/* <span className="scan-text">{t('downloadApp.scanToDownload')}</span> */}
                     </div>
                 </div>
             </div>

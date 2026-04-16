@@ -642,6 +642,185 @@ export const translations = {
             description: "Get the full connective India experience on your phone. Scan the QR code or click the buttons below to download.",
             scanToDownload: "Scan to download"
         },
+        termsOfUse: {
+            banner: {
+                title: "Terms of Use (EULA)",
+                subtitle: "Please read our terms of service carefully.",
+                label: "Legal"
+            },
+            lastUpdated: "Connective India - Terms of Use Last Updated: April 15, 2026",
+            section1: "1. Acceptance of Terms By accessing or using the ConnectiveIndia application and website, you agree to be bound by these Terms and Conditions.",
+            section2: "2. Use of Service ConnectiveIndia provides a platform to connect service providers and seekers. You agree to use the service only for lawful purposes.",
+            section3: {
+                title: "3. Membership & Plans (Non-Renewing)",
+                desc: "ConnectiveIndia offers fixed-term membership plans (Seeker, Provider, Combo) for a duration of 1 year.",
+                chargeOptions: {
+                    oneTimeCharge: "One-Time Charge:",
+                    oneTimeChargeDesc: "All purchases are one-time charges for the specified 1-year duration.",
+                    nonRenewing: "Non-Renewing:",
+                    nonRenewingDesc: "These plans do NOT automatically renew. Upon expiry after 1 year, you must manually purchase a new plan to continue using premium features.",
+                    payment: "Payment:",
+                    paymentDesc: "Payments are processed securely via the Apple App Store or Google Play Store."
+                }
+            },
+            section4: "4. Refund Policy All fees are non-refundable once the digital service is activated, except in cases of duplicate payment or technical failure to activate the service after payment.",
+            section5: "5. Limitation of Liability ConnectiveIndia is not liable for indirect damages arising from the use of the service",
+            section6: "6. Contact Us Email:",
+            section7: "7. Address:",
+            addressDetail: "Connective India, Ernakulam, Kerala, India"
+        },
+        privacyPolicy: {
+            banner: {
+                title: "Privacy Policy",
+                subtitle: "We are committed to protecting your personal information.",
+                label: "Legal"
+            },
+            lastUpdated: "Connective India - Privacy Policy Last Updated: April 15, 2026",
+            section1: "1. Information We Collect We collect your name, phone number, location, and identity documents for verification and account setup.",
+            section2: "2. How We Use Data Your data is used to verify your identity, process payments, and provide matching services within the Connective India platform.",
+            section3: "3. Data Security We employ industry-standard security measures to protect your personal information.",
+            section4: "4. Third-Party Sharing We share data only with trusted partners (like payment processors) necessary to operate the service. We do not sell your personal data.",
+            section5: "5. Your Rights You have the right to access, correct, or delete your data at any time through the app settings or by contacting us.",
+            section6: "6. Contact Us Email:"
+        },
+        refundPolicy: {
+            banner: {
+                title: "Refund Cancellation Policy",
+                subtitle: "Connective India is a digital platform that connects users with service providers, sellers, and professionals across various categories. We do not directly own, manufacture, or deliver services/products listed on the platform.",
+                label: "Legal"
+            },
+            lastUpdated: "Last Updated: January 24, 2026",
+            section1: {
+                title: "1. Nature of Transactions",
+                p1: "All bookings, purchases, or service requests made through Connective India are facilitated between users and independent service providers or sellers registered on the platform.",
+                p2: "Connective India acts only as an intermediary to enable smooth communication, discovery, and transaction support."
+            },
+            section2: {
+                title: "2. Cancellation Policy",
+                l1: "Cancellation of any service, booking, or order is subject to the individual provider’s or seller’s cancellation terms.",
+                l2: "Users must review the provider’s terms before confirming any booking or payment.",
+                l3: "In case of cancellation requests, users should initiate the request through the platform or contact the respective provider directly."
+            },
+            section3: {
+                title: "3. Refund Policy",
+                l1: "Refunds, if applicable, are processed based on the provider’s refund policy.",
+                l2: "Connective India does not guarantee refunds for services/products once the transaction is confirmed.",
+                l3: "Any eligible refunds will be processed within a reasonable time frame after approval from the respective provider."
+            },
+            section4: {
+                title: "4. Platform Responsibility",
+                l1: "Connective India may assist in facilitating communication between users and providers for refund or cancellation requests.",
+                l2: "However, the final decision regarding refunds or cancellations lies with the service provider or seller."
+            },
+            section5: {
+                title: "5. User Responsibility",
+                l1: "Users are advised to carefully review service details, pricing, provider credibility, and terms before making any transaction.",
+                l2: "Connective India is not responsible for dissatisfaction arising from services or products delivered by third-party providers."
+            },
+            section6: {
+                title: "6. Dispute Resolution",
+                l1: "Any disputes regarding cancellations, refunds, or service quality must be resolved directly between the user and the service provider/seller.",
+                l2: "Connective India may provide support in mediation but does not take liability for final outcomes."
+            },
+            section7: {
+                title: "7. Digital Products / Subscription Plans (if applicable)",
+                l1: "Subscription plans, featured listings, or promotional services purchased on Connective India are non-refundable unless explicitly stated otherwise.",
+                l2: "Once activated, these services cannot be canceled or refunded."
+            },
+            section8: {
+                title: "8. Policy Updates",
+                p1: "Connective India reserves the right to update or modify this policy at any time without prior notice."
+            }
+        },
+        faq: {
+            banner: {
+                title: "FAQ",
+                subtitle: "Frequently asked questions about our services.",
+                label: "Help center"
+            },
+            items: [
+                {
+                    question: "What is Connective India?",
+                    answer: "Connective India is an assisted service delivery platform that connects service seekers and service providers, ensuring trusted services at the right time and place."
+                },
+                {
+                    question: "Is Connective India only a mobile app?",
+                    answer: "No. Connective India is a complete assisted service ecosystem supported by technology, coordination, and customer support."
+                },
+                {
+                    question: "Who can join Connective India?",
+                    answer: "Individuals, families, businesses, professionals, institutions, and organizations can join as Service Seekers or Service Providers."
+                },
+                {
+                    question: "What types of services are available on Connective India?",
+                    answer: "Services include Jobs, Admissions, Buy & Sell, Rent & Rent Out, Health & Care, Matrimony, Events & Bookings, Personal & Home Care, Travel & Transport, and Business Services."
+                },
+                {
+                    question: "How do I register on Connective India?",
+                    answer: "You can register through the mobile app or website by providing your basic details and selecting your membership category."
+                },
+                {
+                    question: "Is there a membership fee?",
+                    answer: "Yes. Connective India offers different membership plans for Service Seekers, Service Providers, and Combo users based on the service level."
+                },
+                {
+                    question: "What is the difference between Ordinary and Premium membership?",
+                    answer: "Premium members receive higher visibility, priority support, wider service access, and additional benefits compared to ordinary members."
+                },
+                {
+                    question: "How does Connective India ensure trust and safety?",
+                    answer: "Profiles of service providers and seekers are verified to ensure genuine and reliable connections."
+                },
+                {
+                    question: "How does the assisted service system work?",
+                    answer: "Our support team helps with service requests, coordination, follow-ups, and communication to ensure smooth service delivery."
+                },
+                {
+                    question: "Can I use Connective India for multiple services?",
+                    answer: "Yes. A single membership allows you to access multiple service categories."
+                },
+                {
+                    question: "How do Service Providers get customers?",
+                    answer: "Service Providers receive service enquiries based on their category, location, and availability."
+                },
+                {
+                    question: "Is Connective India location-based?",
+                    answer: "Yes. Services are matched based on district or state to ensure faster and more convenient service."
+                },
+                {
+                    question: "Can businesses and institutions join as Service Providers?",
+                    answer: "Yes. Hospitals, schools, companies, agencies, and other organizations can register and offer their services."
+                },
+                {
+                    question: "How do I request a service?",
+                    answer: "You can submit your requirement through the app or website, and our team will assist in connecting you with the right provider."
+                },
+                {
+                    question: "Does Connective India guarantee service quality?",
+                    answer: "We ensure verified connections and assisted coordination, but the final service agreement is between the service seeker and provider."
+                },
+                {
+                    question: "Can I upgrade my membership later?",
+                    answer: "Yes. Members can upgrade their plan anytime to access additional benefits."
+                },
+                {
+                    question: "Is Connective India available across India?",
+                    answer: "Yes. Connective India is designed to operate across districts and states, with services expanding gradually."
+                },
+                {
+                    question: "How do I contact customer support?",
+                    answer: "You can contact our support team through the app, website, or official customer care channels."
+                },
+                {
+                    question: "Can individuals earn through Connective India?",
+                    answer: "Yes. Skilled individuals, freelancers, and professionals can register as Service Providers and get service opportunities."
+                },
+                {
+                    question: "What makes Connective India different from other platforms?",
+                    answer: "Connective India offers verified profiles, location-based matching, and assisted service support — delivering the right service at the right place and time."
+                }
+            ]
+        }
     },
     ML: {
         header: {
@@ -1286,6 +1465,185 @@ export const translations = {
             title: "ആപ്പ് ഡൗൺലോഡ് ചെയ്യുക",
             description: "കണക്റ്റീവ് ഇന്ത്യയുടെ സേവനങ്ങൾ നിങ്ങളുടെ ഫോണിൽ ലഭ്യമാക്കൂ. ആപ്പ് ഡൗൺലോഡ് ചെയ്യുന്നതിനായി ക്യുആർ കോഡ് സ്കാൻ ചെയ്യുക അല്ലെങ്കിൽ താഴെയുള്ള ബട്ടണുകളിൽ ക്ലിക്ക് ചെയ്യുക.",
             scanToDownload: "ഡൗൺലോഡ് ചെയ്യാൻ സ്കാൻ ചെയ്യുക"
+        },
+        termsOfUse: {
+            banner: {
+                title: "ഉപയോഗ നിബന്ധനകൾ (EULA)",
+                subtitle: "ദയവായി ഞങ്ങളുടെ സേവന നിബന്ധനകൾ ശ്രദ്ധാപൂർവ്വം വായിക്കുക.",
+                label: "നിയമപരം"
+            },
+            lastUpdated: "കണക്റ്റീവ് ഇന്ത്യ - ഉപയോഗ നിബന്ധനകൾ അവസാനമായി പുതുക്കിയത്: ഏപ്രിൽ 15, 2026",
+            section1: "1. നിബന്ധനകൾ അംഗീകരിക്കൽ കണക്റ്റീവ് ഇന്ത്യ ആപ്ലിക്കേഷനും വെബ്സൈറ്റും ഉപയോഗിക്കുന്നതിലൂടെ, ഈ നിബന്ധനകൾക്കും വ്യവസ്ഥകൾക്കും വിധേയരാകാൻ നിങ്ങൾ സമ്മതിക്കുന്നു.",
+            section2: "2. സേവനത്തിന്റെ ഉപയോഗം സേവന ദാതാക്കളെയും അന്വേഷികളെയും ബന്ധിപ്പിക്കുന്നതിനുള്ള ഒരു പ്ലാറ്റ്ഫോമാണ് കണക്റ്റീവ് ഇന്ത്യ നൽകുന്നത്. നിയമാനുസൃതമായ ആവശ്യങ്ങൾക്ക് മാത്രം സേവനം ഉപയോഗിക്കാൻ നിങ്ങൾ സമ്മതിക്കുന്നു.",
+            section3: {
+                title: "3. അംഗത്വവും പ്ലാനുകളും (പുതുക്കാത്തവ)",
+                desc: "കണക്റ്റീവ് ഇന്ത്യ 1 വർഷത്തേക്കുള്ള ഫിക്സഡ്-ടേം അംഗത്വ പ്ലാനുകൾ (സീക്കർ, പ്രൊവൈഡർ, കോംബോ) വാഗ്ദാനം ചെയ്യുന്നു.",
+                chargeOptions: {
+                    oneTimeCharge: "ഒറ്റത്തവണ ചാർജ്:",
+                    oneTimeChargeDesc: "നിർദ്ദിഷ്ട 1 വർഷ കാലയളവിനുള്ള ഒറ്റത്തവണത്തെ പേയ്‌മെന്റ് ആണ് ഇത്.",
+                    nonRenewing: "പുതുക്കാത്തത്:",
+                    nonRenewingDesc: "ഈ പ്ലാനുകൾ സ്വയമേവ പുതുക്കില്ല. 1 വർഷത്തിന് ശേഷം കാലാവധി കഴിയുമ്പോൾ, പ്രീമിയം സേവനങ്ങൾ തുടർന്നും ഉപയോഗിക്കാൻ നിങ്ങൾ പുതിയ പ്ലാൻ വാങ്ങേണ്ടതാണ്.",
+                    payment: "പേയ്മെന്റ്:",
+                    paymentDesc: "പേയ്മെന്റുകൾ ആപ്പിൾ ആപ്പ് സ്റ്റോർ വഴിയോ ഗൂഗിൾ പ്ലേ സ്റ്റോർ വഴിയോ സുരക്ഷിതമായി പ്രോസസ്സ് ചെയ്യുന്നു."
+                }
+            },
+            section4: "4. റീഫണ്ട് നയം ഡിജിറ്റൽ സേവനം സജീവമാക്കിക്കഴിഞ്ഞാൽ ഫീസ് റീഫണ്ട് ചെയ്യാവുന്നതല്ല, ഇരട്ട പേയ്മെന്റ് നടക്കുകയോ പേയ്‌മെന്റിന് ശേഷം സേവനം ആക്റ്റിവേറ്റ് ചെയ്യുന്നതിൽ സാങ്കേതിക തകരാർ സംഭവിക്കുകയോ ചെയ്താൽ ഒഴികെ.",
+            section5: "5. ബാധ്യതയുടെ പരിമിതി സേവനത്തിന്റെ ഉപയോഗത്തിൽ നിന്നുണ്ടാകുന്ന പരോക്ഷമായ നാശനഷ്ടങ്ങൾക്ക് കണക്റ്റീവ് ഇന്ത്യയ്ക്ക് ബാധ്യതയില്ല.",
+            section6: "6. ബന്ധപ്പെടുക ഇമെയിൽ:",
+            section7: "7. വിലാസം:",
+            addressDetail: "കണക്റ്റീവ് ഇന്ത്യ, എറണാകുളം, കേരളം, ഇന്ത്യ"
+        },
+        privacyPolicy: {
+            banner: {
+                title: "സ്വകാര്യതാ നയം",
+                subtitle: "നിങ്ങളുടെ വ്യക്തിഗത വിവരങ്ങൾ സംരക്ഷിക്കാൻ ഞങ്ങൾ പ്രതിജ്ഞാബദ്ധരാണ്.",
+                label: "നിയമപരം"
+            },
+            lastUpdated: "കണക്റ്റീവ് ഇന്ത്യ - സ്വകാര്യതാ നയം അവസാനമായി പുതുക്കിയത്: ഏപ്രിൽ 15, 2026",
+            section1: "1. ഞങ്ങൾ ശേഖരിക്കുന്ന വിവരങ്ങൾ വെരിഫിക്കേഷനും അക്കൗണ്ട് സജ്ജീകരിക്കുന്നതിനുമായി ഞങ്ങൾ നിങ്ങളുടെ പേര്, ഫോൺ നമ്പർ, സ്ഥാനം, തിരിച്ചറിയൽ രേഖകൾ എന്നിവ ശേഖരിക്കുന്നു.",
+            section2: "2. ഞങ്ങൾ ഡാറ്റ എങ്ങനെ ഉപയോഗിക്കുന്നു നിങ്ങളുടെ ഐഡന്റിറ്റി പരിശോധിച്ചുറപ്പിക്കുന്നതിനും പേയ്മെന്റുകൾ പ്രോസസ്സ് ചെയ്യുന്നതിനും കണക്റ്റീവ് ഇന്ത്യ പ്ലാറ്റ്ഫോമിനുള്ളിൽ സേവനങ്ങൾ നൽകുന്നതിനും നിങ്ങളുടെ ഡാറ്റ ഉപയോഗിക്കുന്നു.",
+            section3: "3. ഡാറ്റ സുരക്ഷ നിങ്ങളുടെ വ്യക്തിഗത വിവരങ്ങൾ സംരക്ഷിക്കുന്നതിനായി ഞങ്ങൾ വ്യവസായ നിലവാരത്തിലുള്ള സുരക്ഷാ നടപടികൾ സ്വീകരിക്കുന്നു.",
+            section4: "4. മൂന്നാം കക്ഷിയുമായി പങ്കിടൽ സേവനം പ്രവർത്തിപ്പിക്കാൻ അത്യന്താപേക്ഷിതമായ വിശ്വസ്ത പങ്കാളികളുമായി (ഉദാഹരണത്തിന് പേയ്മെന്റ് പ്രോസസ്സറുകൾ) മാത്രമേ ഞങ്ങൾ ഡാറ്റ പങ്കിടുകയുള്ളൂ. നിങ്ങളുടെ വ്യക്തിഗത ഡാറ്റ ഞങ്ങൾ വിൽക്കില്ല.",
+            section5: "5. നിങ്ങളുടെ അവകാശങ്ങൾ ആപ്പ് ക്രമീകരണങ്ങളിലൂടെയോ അല്ലെങ്കിൽ ഞങ്ങളെ ബന്ധപ്പെടുന്നതിലൂടെയോ എപ്പോൾ വേണമെങ്കിലും നിങ്ങളുടെ ഡാറ്റ ആക്സസ് ചെയ്യാനോ തിരുത്താനോ ഇല്ലാതാക്കാനോ നിങ്ങൾക്ക് അവകാശമുണ്ട്.",
+            section6: "6. ബന്ധപ്പെടുക ഇമെയിൽ:"
+        },
+        refundPolicy: {
+            banner: {
+                title: "റീഫണ്ട് കാൻസലേഷൻ നയം",
+                subtitle: "കണക്റ്റീവ് ഇന്ത്യ എന്നത് ഉപയോക്താക്കളെ സേവന ദാതാക്കൾ, വിൽപ്പനക്കാർ, വിവിധ വിഭാഗങ്ങളിലെ പ്രൊഫഷണലുകൾ എന്നിവരുമായി ബന്ധിപ്പിക്കുന്ന ഒരു ഡിജിറ്റൽ പ്ലാറ്റ്‌ഫോമാണ്. പ്ലാറ്റ്‌ഫോമിൽ ലിസ്‌റ്റ് ചെയ്‌തിരിക്കുന്ന സേവനങ്ങൾ/ഉൽപ്പന്നങ്ങൾ ഞങ്ങൾ നേരിട്ട് സ്വന്തമാക്കുകയോ നിർമ്മിക്കുകയോ വിതരണം ചെയ്യുകയോ ചെയ്യുന്നില്ല.",
+                label: "നിയമപരം"
+            },
+            lastUpdated: "അവസാനമായി പുതുക്കിയത്: ജനുവരി 24, 2026",
+            section1: {
+                title: "1. ഇടപാടുകളുടെ സ്വഭാവം",
+                p1: "കണക്റ്റീവ് ഇന്ത്യ വഴി നടത്തുന്ന എല്ലാ ബുക്കിംഗുകളും പർച്ചേസുകളും സേവന അഭ്യർത്ഥനകളും ഉപയോക്താക്കളും പ്ലാറ്റ്‌ഫോമിൽ രജിസ്റ്റർ ചെയ്തിട്ടുള്ള സ്വതന്ത്ര സേവന ദാതാക്കളും അല്ലെങ്കിൽ വിൽപ്പനക്കാരും തമ്മിലാണ് സുഗമമാക്കുന്നത്.",
+                p2: "സുഗമമായ ആശയവിനിമയത്തിനും, കണ്ടെത്തുന്നതിനും, ഇടപാടുകൾക്കുള്ള പിന്തുണ നൽകുന്നതിനുമുള്ള ഒരു ഇടനിലക്കാരനായി മാത്രമാണ് കണക്റ്റീവ് ഇന്ത്യ പ്രവർത്തിക്കുന്നത്."
+            },
+            section2: {
+                title: "2. കാൻസലേഷൻ നയം",
+                l1: "ഏതെങ്കിലും സേവനത്തിന്റെയോ ബുക്കിംഗിന്റെയോ ഓർഡറിന്റെയോ കാൻസലേഷൻ പൂർണ്ണമായും ബന്ധപ്പെട്ട സേവന ദാതാവിന്റെ അല്ലെങ്കിൽ വിൽപ്പനക്കാരന്റെ കാൻസലേഷൻ നിബന്ധനകൾക്ക് വിധേയമായിരിക്കും.",
+                l2: "ഏതെങ്കിലും ബുക്കിംഗോ പേയ്‌മെന്റോ സ്ഥിരീകരിക്കുന്നതിന് മുമ്പ് ഉപയോക്താക്കൾ സേവന ദാതാവിന്റെ നിബന്ധനകൾ അവലോകനം ചെയ്യേണ്ടതാണ്.",
+                l3: "കാൻസലേഷൻ ആവശ്യപ്പെടുന്ന സാഹചര്യത്തിൽ, ഉപയോക്താക്കൾ പ്ലാറ്റ്‌ഫോമിലൂടെ തിരുത്തലുകൾ ആവശ്യപ്പെടുകയോ അല്ലെങ്കിൽ അതാത് സേവന ദാതാവിനെ നേരിട്ട് ബന്ധപ്പെടുകയോ ചെയ്യണം."
+            },
+            section3: {
+                title: "3. റീഫണ്ട് നയം",
+                l1: "ബാധകമെങ്കിൽ, റീഫണ്ടുകൾ സേവന ദാതാവിന്റെ റീഫണ്ട് നയത്തിന്റെ അടിസ്ഥാനത്തിൽ പ്രോസസ്സ് ചെയ്യും.",
+                l2: "ഇടപാട് സ്ഥിരീകരിച്ചുകഴിഞ്ഞാൽ, സേവനങ്ങൾക്കും ഉൽപ്പന്നങ്ങൾക്കും കണക്റ്റീവ് ഇന്ത്യ റീഫണ്ട് ഗ്യാരണ്ടി നൽകുന്നില്ല.",
+                l3: "അതാത് സേവന ദാതാവിന്റെ അംഗീകാരത്തിന് ശേഷം മാന്യമായ സമയപരിധിക്കുള്ളിൽ അർഹമായ റീഫണ്ടുകൾ പ്രോസസ്സ് ചെയ്യപ്പെടും."
+            },
+            section4: {
+                title: "4. പ്ലാറ്റ്‌ഫോമിന്റെ ഉത്തരവാദിത്തം",
+                l1: "റീഫണ്ടിനോ കാൻസലേഷനോ വേണ്ടി ഉപയോക്താക്കളും സേവന ദാതാക്കളും തമ്മിലുള്ള ആശയവിനിമയം സുഗമമാക്കാൻ കണക്റ്റീവ് ഇന്ത്യ സഹായിച്ചേക്കാം.",
+                l2: "എങ്കിലും, റീഫണ്ടുകൾ അല്ലെങ്കിൽ കാൻസലേഷൻ സംബന്ധിച്ച അന്തിമ തീരുമാനം സേവന ദാതാവിന്റെ അല്ലെങ്കിൽ വിൽപ്പനക്കാരന്റെതായിരിക്കും."
+            },
+            section5: {
+                title: "5. ഉപയോക്താവിന്റെ ഉത്തരവാദിത്തം",
+                l1: "ഏതൊരു ഇടപാടുകൾ നടത്തുന്നതിന് മുൻപും സേവന വിശദാംശങ്ങൾ, വില, സേവന ദാതാവിന്റെ വിശ്വാസ്യത, നിബന്ധനകൾ എന്നിവ ശ്രദ്ധാപൂർവ്വം അവലോകനം ചെയ്യാൻ ഉപയോക്താക്കളോട് നിർദ്ദേശിക്കുന്നു.",
+                l2: "മൂന്നാം കക്ഷി സേവന ദാതാക്കൾ നൽകുന്ന സേവനങ്ങൾ അല്ലെങ്കിൽ ഉൽപ്പന്നങ്ങൾ മൂലമുണ്ടാകുന്ന അതൃപ്തിക്ക് കണക്റ്റീവ് ഇന്ത്യ ഉത്തരവാദിയല്ല."
+            },
+            section6: {
+                title: "6. തർക്ക പരിഹാരം",
+                l1: "കാൻസലേഷനുകൾ, റീഫണ്ടുകൾ, അല്ലെങ്കിൽ സേവന നിലവാരം എന്നിവയെ സംബന്ധിച്ചുള്ള തർക്കങ്ങൾ എന്തെങ്കിലുമുണ്ടെങ്കിൽ അവ ഉപയോക്താവും സേവന ദാതാവും/വിൽപ്പനക്കാരനും തമ്മിൽ നേരിട്ട് പരിഹരിക്കേണ്ടതാണ്.",
+                l2: "കണക്റ്റീവ് ഇന്ത്യ മധ്യസ്ഥതയിൽ പിന്തുണ നൽകിയേക്കാം, പക്ഷേ അന്തിമ ഫലങ്ങളുടെ ബാധ്യത ഏറ്റെടുക്കില്ല."
+            },
+            section7: {
+                title: "7. ഡിജിറ്റൽ ഉൽപ്പന്നങ്ങൾ / സബ്‌സ്‌ക്രിപ്‌ഷൻ പ്ലാനുകൾ (ബാധകമെങ്കിൽ)",
+                l1: "അല്ലെന്ന് വ്യക്തമായി പറഞ്ഞിട്ടില്ലെങ്കിൽ കണക്റ്റീവ് ഇന്ത്യയിൽ വാങ്ങുന്ന സബ്‌സ്‌ക്രിപ്‌ഷൻ പ്ലാനുകൾ, ഫീച്ചർ ലിസ്റ്റിംഗുകൾ, പ്രാമോഷണൽ സേവനങ്ങൾ എന്നിവയ്ക്ക് റീഫണ്ട് ലഭിക്കുന്നതല്ല.",
+                l2: "ഒരിക്കൽ സജീവമാക്കിക്കഴിഞ്ഞാൽ ഈ സേവനങ്ങൾ റദ്ദാക്കാനോ റീഫണ്ട് ചെയ്യാനോ കഴിയില്ല."
+            },
+            section8: {
+                title: "8. പോളിസി അപ്ഡേറ്റുകൾ",
+                p1: "മുൻകൂട്ടി അറിയിക്കാതെ ഈ പോളിസി എപ്പോൾ വേണമെങ്കിലും അപ്ഡേറ്റ് അല്ലെങ്കിൽ മാറ്റം വരുത്താനുള്ള പൂർണ്ണ അധികാരം കണക്റ്റീവ് ഇന്ത്യക്ക് ഉണ്ട്."
+            }
+        },
+        faq: {
+            banner: {
+                title: "പതിവ് ചോദ്യങ്ങൾ",
+                subtitle: "ഞങ്ങളുടെ സേവനങ്ങളെക്കുറിച്ച് പതിവായി ചോദിക്കുന്ന ചോദ്യങ്ങൾ.",
+                label: "സഹായ കേന്ദ്രം"
+            },
+            items: [
+                {
+                    question: "എന്താണ് കണക്റ്റീവ് ഇന്ത്യ?",
+                    answer: "സേവന അന്വേഷികളെയും സേവന ദാതാക്കളെയും ബന്ധിപ്പിക്കുന്ന ഒരു അസിസ്റ്റഡ് സർവീസ് ഡെലിവറി പ്ലാറ്റ്ഫോമാണ് കണക്റ്റീവ് ഇന്ത്യ, ശരിയായ സമയത്തും സ്ഥലത്തും വിശ്വസനീയമായ സേവനങ്ങൾ ഇതുറപ്പാക്കുന്നു."
+                },
+                {
+                    question: "കണക്റ്റീവ് ഇന്ത്യ ഒരു മൊബൈൽ ആപ്പ് മാത്രമാണോ?",
+                    answer: "അല്ല. സാങ്കേതികവിദ്യ, ഏകോപനം, ഉപഭോക്തൃ പിന്തുണ എന്നിവയുടെ പിൻബലമുള്ള തികഞ്ഞൊരു അസിസ്റ്റഡ് സർവീസ് ഇക്കോസിസ്റ്റമാണ് കണക്റ്റീവ് ഇന്ത്യ."
+                },
+                {
+                    question: "ആർക്കൊക്കെ കണക്റ്റീവ് ഇന്ത്യയിൽ ചേരാം?",
+                    answer: "വ്യക്തികൾ, കുടുംബങ്ങൾ, ബിസിനസ്സുകൾ, പ്രൊഫഷണലുകൾ, സ്ഥാപനങ്ങൾ എന്നിവർക്കെല്ലാം സേവന അന്വേഷികളായോ സേവന ദാതാക്കളായോ ഇതിൽ ചേരാം."
+                },
+                {
+                    question: "കണക്റ്റീവ് ഇന്ത്യയിൽ ഏതെല്ലാം തരത്തിലുള്ള സേവനങ്ങൾ ലഭ്യമാണ്?",
+                    answer: "ജോലികൾ, അഡ്മിഷനുകൾ, വാങ്ങലും വിൽക്കലും, വാടകയ്ക്ക് നൽകലും എടുക്കലും, ആരോഗ്യം & പരിചരണം, മാട്രിമോണി, ഇവന്റുകൾ & ബുക്കിംഗുകൾ, വ്യക്തിഗത & ഹോം കെയർ, ട്രാവിൽ & ട്രാൻസ്പോർട്ട്, ബിസിനസ്സ് സേവനങ്ങൾ തുടങ്ങിയ ഉൾപ്പെടുന്നു."
+                },
+                {
+                    question: "ഞാൻ എങ്ങനെയാണ് കണക്റ്റീവ് ഇന്ത്യയിൽ രജിസ്റ്റർ ചെയ്യേണ്ടത്?",
+                    answer: "നിങ്ങളുടെ അടിസ്ഥാന വിവരങ്ങൾ നൽകിയും അംഗത്വ വിഭാഗം തിരഞ്ഞെടുത്തും മൊബൈൽ ആപ്പിലൂടെയോ വെബ്സൈറ്റിലൂടെയോ രജിസ്റ്റർ ചെയ്യാം."
+                },
+                {
+                    question: "അംഗത്വ ഫീസ് ഉണ്ടോ?",
+                    answer: "ഉണ്ട്. സേവന നിലവാരത്തെ അടിസ്ഥാനമാക്കി സേവന അന്വേഷികൾക്കും, സേവന ദാതാക്കൾക്കും, കൂടാതെ കോംബോ ഉപയോക്താക്കൾക്കുമായി വ്യത്യസ്ത അംഗത്വ പ്ലാനുകൾ കണക്റ്റീവ് ഇന്ത്യ വാഗ്ദാനം ചെയ്യുന്നു."
+                },
+                {
+                    question: "ഓർഡിനറി, പ്രീമിയം അംഗത്വങ്ങൾ തമ്മിലുള്ള വ്യത്യാസം എന്താണ്?",
+                    answer: "സാധാരണ അംഗങ്ങളെ അപേക്ഷിച്ച് പ്രീമിയം അംഗങ്ങൾക്ക് കൂടുതൽ ദൃശ്യപരത, മുൻഗണനാ പിന്തുണ, വിപുലമായ സേവന ലഭ്യത, കൂടുതൽ ആനുകൂല്യങ്ങൾ എന്നിവ ലഭിക്കുന്നു."
+                },
+                {
+                    question: "കണക്റ്റീവ് ഇന്ത്യ എങ്ങനെയാണ് വിശ്വാസവും സുരക്ഷയും ഉറപ്പാക്കുന്നത്?",
+                    answer: "യഥാർത്ഥവും വിശ്വസനീയവുമായ ബന്ധങ്ങൾ ഉറപ്പാക്കുന്നതിന് സേവന ദാതാക്കളുടെയും അന്വേഷികളുടെയും പ്രൊഫൈലുകൾ വെരിഫൈ ചെയ്യുന്നു."
+                },
+                {
+                    question: "അസിസ്റ്റഡ് സർവീസ് സിസ്റ്റം എങ്ങനെ പ്രവർത്തിക്കുന്നു?",
+                    answer: "സുഗമമായ സേവന വിതരണം ഉറപ്പാക്കാൻ സേവന അഭ്യർത്ഥനകൾ, ഏകോപനം, ഫോളോ-അപ്പുകൾ, ആശയവിനിമയം എന്നിവയിൽ ഞങ്ങളുടെ സപ്പോർട്ട് ടീം സഹായിക്കുന്നു."
+                },
+                {
+                    question: "ഒന്നിലധികം സേവനങ്ങൾക്കായി എനിക്ക് കണക്റ്റീവ് ഇന്ത്യ ഉപയോഗിക്കാമോ?",
+                    answer: "അതെ. ഒറ്റ അംഗത്വത്തിലൂടെ ഏതു സേവനത്തിലേക്കും നിങ്ങൾക്ക് പ്രവേശനം ലഭിക്കും."
+                },
+                {
+                    question: "സേവന ദാതാക്കൾക്ക് എങ്ങനെയാണ് ഉപഭോക്താക്കളെ ലഭിക്കുന്നത്?",
+                    answer: "സേവന ദാതാക്കൾക്ക് അവരുടെ വിഭാഗം, സ്ഥലം, ലഭ്യത എന്നിവയുടെ അടിസ്ഥാനത്തിൽ സേവന അന്വേഷണങ്ങൾ ലഭിക്കുന്നു."
+                },
+                {
+                    question: "കണക്റ്റീവ് ഇന്ത്യ ലൊക്കേഷൻ അടിസ്ഥാനമാക്കിയുള്ളതാണോ?",
+                    answer: "അതെ. വേഗമേറിയതും സൗകര്യപ്രദവുമായ സേവനം ഉറപ്പാക്കാൻ ജില്ലയുടേയോ സംസ്ഥാനത്തിന്റെയോ അടിസ്ഥാനത്തിലാണ് സേവനങ്ങൾ മാച്ച് ചെയ്യുന്നത്."
+                },
+                {
+                    question: "ബിസിനസ്സുകൾക്കും സ്ഥാപനങ്ങൾക്കും സേവന ദാതാക്കളായി ചേരാനാകുമോ?",
+                    answer: "അതെ. ആശുപത്രികൾ, സ്കൂളുകൾ, കമ്പനികൾ, ഏജൻസികൾ, മറ്റ് ഓർഗനൈസേഷനുകൾ എന്നിവർക്ക് രജിസ്റ്റർ ചെയ്ത് സേവനങ്ങൾ നൽകാം."
+                },
+                {
+                    question: "ഒരു സേവനത്തിനായി ഞാൻ എങ്ങനെ അഭ്യർത്ഥിക്കും?",
+                    answer: "നിങ്ങൾക്ക് ആപ്പ് വഴിയോ വെബ്സൈറ്റ് വഴിയോ ആവശ്യങ്ങൾ സമർപ്പിക്കാം, ശരിയായ ദാതാവുമായി നിങ്ങളെ ബന്ധിപ്പിക്കാൻ ഞങ്ങളുടെ ടീം സഹായിക്കും."
+                },
+                {
+                    question: "കണക്റ്റീവ് ഇന്ത്യ സേവന നിലവാരം ഉറപ്പുനൽകുന്നുണ്ടോ?",
+                    answer: "ഞങ്ങൾ വെരിഫൈ ചെയ്ത കണക്ഷനുകളും അസിസ്റ്റഡ് ഏകോപനവും ഉറപ്പാക്കുന്നു, എങ്കിലും അന്തിമ സേവന കരാർ സേവന അന്വേഷിയും ദാതാവും തമ്മിലായിരിക്കും."
+                },
+                {
+                    question: "എന്റെ അംഗത്വം പിന്നീട് അപ്ഗ്രേഡ് ചെയ്യാനാകുമോ?",
+                    answer: "അതെ. അധിക ആനുകൂല്യങ്ങൾ ആക്സസ് ചെയ്യുന്നതിനായി അംഗങ്ങൾക്ക് എപ്പോൾ വേണമെങ്കിലും പ്ലാൻ അപ്ഗ്രേഡ് ചെയ്യാം."
+                },
+                {
+                    question: "കണക്റ്റീവ് ഇന്ത്യ ഇന്ത്യയിലുടനീളം ലഭ്യമാണോ?",
+                    answer: "അതെ. ഘട്ടം ഘട്ടമായി സേവനങ്ങൾ വിപുലീകരിച്ചുകൊണ്ട് ജില്ലകളിലും സംസ്ഥാനങ്ങളിലുമായി പ്രവർത്തിക്കുന്നതിനാണ് കണക്റ്റീവ് ഇന്ത്യ രൂപകൽപ്പന ചെയ്തിരിക്കുന്നത്."
+                },
+                {
+                    question: "കസ്റ്റമർ സപ്പോർട്ടുമായി ഞാൻ എങ്ങനെ ബന്ധപ്പെടും?",
+                    answer: "ആപ്പ്, വെബ്സൈറ്റ് അല്ലെങ്കിൽ ഔദ്യോഗിക കസ്റ്റമർ കെയർ ചാനലുകൾ വഴി നിങ്ങൾക്ക് ഞങ്ങളുടെ സപ്പോർട്ട് ടീമുമായി ബന്ധപ്പെടാം."
+                },
+                {
+                    question: "വ്യക്തികൾക്ക് കണക്റ്റീവ് ഇന്ത്യയിലൂടെ വരുമാനമുണ്ടാക്കാനാകുമോ?",
+                    answer: "അതെ. വൈദഗ്ധ്യമുള്ള വ്യക്തികൾക്കും ഫ്രീലാൻസർമാർക്കും പ്രൊഫഷണലുകൾക്കും സേവന ദാതാക്കളായി രജിസ്റ്റർ ചെയ്ത് സേവന അവസരങ്ങൾ നേടാം."
+                },
+                {
+                    question: "മറ്റ് പ്ലാറ്റ്ഫോമുകളിൽ നിന്ന് കണക്റ്റീവ് ഇന്ത്യയെ വ്യത്യസ്തമാക്കുന്നത് എന്താണ്?",
+                    answer: "കണക്റ്റീവ് ഇന്ത്യ വെരിഫൈഡ് പ്രൊഫൈലുകൾ, ലൊക്കേഷൻ അടിസ്ഥാനമാക്കിയുള്ള മാച്ചിംഗ്, അസിസ്റ്റഡ് സർവീസ് പിന്തുണ എന്നിവ വാഗ്ദാനം ചെയ്യുന്നു — ശരിയായ സമയത്തും സ്ഥലത്തും ശരിയായ സേവനം എത്തിച്ചു നൽകുന്നു."
+                }
+            ]
         }
     }
 };

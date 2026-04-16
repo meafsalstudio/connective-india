@@ -28,7 +28,7 @@ const DownloadApp = () => {
                                     <strong>{t('hero.appStore')}</strong>
                                 </div>
                             </a>
-                            <a href="#" className="download-btn google">
+                            <a href="https://play.google.com/store/apps/details?id=in.connectiveindia.connectiveindia" target='_blank' className="download-btn google">
                                 <FaGooglePlay className="btn-icon" />
                                 <div className="btn-text">
                                     <span>{t('hero.getItOn')}</span>
